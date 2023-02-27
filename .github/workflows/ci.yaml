@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup qbec
+        run:  |
+          wget https://github.com/splunk/qbec/releases/download/v0.15.2/qbec-linux-amd64.tar.gz
+          tar -xvf qbec-linux-amd64.tar.gz
+          mkdir .bin
+          mv qbec .bin/
+      - name: Test
+        run: make test
