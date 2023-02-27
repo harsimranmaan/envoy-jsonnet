@@ -22,3 +22,7 @@ regen:
 	rm -rf envoy
 	mkdir -p envoy
 	protoc --plugin jsonnet  --jsonnet_out=envoy -I .gen/envoy/api -I .gen/udpa -I .gen/xds -I .gen/validate .gen/envoy/api/envoy/config/bootstrap/v3/bootstrap.proto
+
+.PHONY: test
+test:
+	./tests/test.sh
