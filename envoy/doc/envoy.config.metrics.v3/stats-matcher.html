@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.metrics.v3.StatsMatcher</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.metrics.v3.StatsMatcher</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.metrics.v3.StatsMatcher
+.withExclusionList(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withInclusionList(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withRejectAll(false)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>exclusion_list</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td>stats_matcher</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>inclusion_list</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td>stats_matcher</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>reject_all</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>stats_matcher</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

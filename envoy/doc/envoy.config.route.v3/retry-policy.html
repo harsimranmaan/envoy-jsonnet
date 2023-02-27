@@ -1,0 +1,358 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RetryPolicy</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RetryPolicy</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RetryPolicy
+.withHostSelectionRetryMaxAttempts(1)
+.withNumRetries(1)
+.withPerTryIdleTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withPerTryTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withRateLimitedRetryBackOff(<a href="../envoy.config.route.v3/retry-policy-rate-limited-retry-back-off.html">types.envoy.config.route.v3.RetryPolicy.RateLimitedRetryBackOff</a>)
+.withRetriableHeaders(<span class='coll'>[</span> <a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a> <span class='coll'>]</span>)
+.withRetriableRequestHeaders(<span class='coll'>[</span> <a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a> <span class='coll'>]</span>)
+.withRetriableStatusCodes(<span class='coll'>[</span> 1 <span class='coll'>]</span>)
+.withRetryBackOff(<a href="../envoy.config.route.v3/retry-policy-retry-back-off.html">types.envoy.config.route.v3.RetryPolicy.RetryBackOff</a>)
+.withRetryHostPredicate(<span class='coll'>[</span> <a href="../envoy.config.route.v3/retry-policy-retry-host-predicate.html">types.envoy.config.route.v3.RetryPolicy.RetryHostPredicate</a> <span class='coll'>]</span>)
+.withRetryOn('string')
+.withRetryOptionsPredicates(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withRetryPriority(<a href="../envoy.config.route.v3/retry-policy-retry-priority.html">types.envoy.config.route.v3.RetryPolicy.RetryPriority</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-reset-header-format.html">envoy.config.route.v3.RetryPolicy.ResetHeaderFormat</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-retry-priority.html">envoy.config.route.v3.RetryPolicy.RetryPriority</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-retry-host-predicate.html">envoy.config.route.v3.RetryPolicy.RetryHostPredicate</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-retry-back-off.html">envoy.config.route.v3.RetryPolicy.RetryBackOff</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-reset-header.html">envoy.config.route.v3.RetryPolicy.ResetHeader</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/retry-policy-rate-limited-retry-back-off.html">envoy.config.route.v3.RetryPolicy.RateLimitedRetryBackOff</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>host_selection_retry_max_attempts</td>
+		<td>
+			
+			
+			
+				int64
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>num_retries</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>per_try_idle_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>per_try_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limited_retry_back_off</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/retry-policy-rate-limited-retry-back-off.html">envoy.config.route.v3.RetryPolicy.RateLimitedRetryBackOff</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retriable_headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retriable_request_headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retriable_status_codes</td>
+		<td>
+			[]
+			
+			
+				uint32
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_back_off</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/retry-policy-retry-back-off.html">envoy.config.route.v3.RetryPolicy.RetryBackOff</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_host_predicate</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/retry-policy-retry-host-predicate.html">envoy.config.route.v3.RetryPolicy.RetryHostPredicate</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_on</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_options_predicates</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_priority</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/retry-policy-retry-priority.html">envoy.config.route.v3.RetryPolicy.RetryPriority</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

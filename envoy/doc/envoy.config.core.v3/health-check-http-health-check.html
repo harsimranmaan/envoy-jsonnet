@@ -1,0 +1,298 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.HealthCheck.HttpHealthCheck</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.HealthCheck.HttpHealthCheck</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.HealthCheck.HttpHealthCheck
+.withCodecClientType(<a href="../envoy.type.v3/codec-client-type.html">types.envoy.type.v3.CodecClientType.HTTP1</a>)
+.withExpectedStatuses(<span class='coll'>[</span> <a href="../envoy.type.v3/int-64-range.html">types.envoy.type.v3.Int64Range</a> <span class='coll'>]</span>)
+.withHost('string')
+.withMethod(<a href="../envoy.config.core.v3/request-method.html">types.envoy.config.core.v3.RequestMethod.METHOD_UNSPECIFIED</a>)
+.withPath('string')
+.withReceive(<span class='coll'>[</span> <a href="../envoy.config.core.v3/health-check-payload.html">types.envoy.config.core.v3.HealthCheck.Payload</a> <span class='coll'>]</span>)
+.withRequestHeadersToAdd(<span class='coll'>[</span> <a href="../envoy.config.core.v3/header-value-option.html">types.envoy.config.core.v3.HeaderValueOption</a> <span class='coll'>]</span>)
+.withRequestHeadersToRemove(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withResponseBufferSize(1)
+.withRetriableStatuses(<span class='coll'>[</span> <a href="../envoy.type.v3/int-64-range.html">types.envoy.type.v3.Int64Range</a> <span class='coll'>]</span>)
+.withSend(<a href="../envoy.config.core.v3/health-check-payload.html">types.envoy.config.core.v3.HealthCheck.Payload</a>)
+.withServiceNameMatcher(<a href="../envoy.type.matcher.v3/string-matcher.html">types.envoy.type.matcher.v3.StringMatcher</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>codec_client_type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/codec-client-type.html">envoy.type.v3.CodecClientType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>expected_statuses</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.type.v3/int-64-range.html">envoy.type.v3.Int64Range</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>host</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>method</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/request-method.html">envoy.config.core.v3.RequestMethod</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true,&#34;not_in&#34;:[6]}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;min_len&#34;:1,&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>receive</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/health-check-payload.html">envoy.config.core.v3.HealthCheck.Payload</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers_to_add</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/header-value-option.html">envoy.config.core.v3.HeaderValueOption</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;max_items&#34;:1000}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers_to_remove</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_buffer_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-64-value.html">google.protobuf.UInt64Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint64&#34;:{&#34;gte&#34;:0}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retriable_statuses</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.type.v3/int-64-range.html">envoy.type.v3.Int64Range</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>send</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/health-check-payload.html">envoy.config.core.v3.HealthCheck.Payload</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>service_name_matcher</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/string-matcher.html">envoy.type.matcher.v3.StringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

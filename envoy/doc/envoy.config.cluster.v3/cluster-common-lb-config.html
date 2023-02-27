@@ -1,0 +1,238 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.cluster.v3.Cluster.CommonLbConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.cluster.v3.Cluster.CommonLbConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.cluster.v3.Cluster.CommonLbConfig
+.withCloseConnectionsOnHostSetChange(false)
+.withConsistentHashingLbConfig(<a href="../envoy.config.cluster.v3/cluster-common-lb-config-consistent-hashing-lb-config.html">types.envoy.config.cluster.v3.Cluster.CommonLbConfig.ConsistentHashingLbConfig</a>)
+.withHealthyPanicThreshold(<a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a>)
+.withIgnoreNewHostsUntilFirstHc(false)
+.withLocalityWeightedLbConfig(<a href="../envoy.config.cluster.v3/cluster-common-lb-config-locality-weighted-lb-config.html">types.envoy.config.cluster.v3.Cluster.CommonLbConfig.LocalityWeightedLbConfig</a>)
+.withOverrideHostStatus(<a href="../envoy.config.core.v3/health-status-set.html">types.envoy.config.core.v3.HealthStatusSet</a>)
+.withUpdateMergeWindow(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withZoneAwareLbConfig(<a href="../envoy.config.cluster.v3/cluster-common-lb-config-zone-aware-lb-config.html">types.envoy.config.cluster.v3.Cluster.CommonLbConfig.ZoneAwareLbConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-common-lb-config-zone-aware-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.ZoneAwareLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-common-lb-config-locality-weighted-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.LocalityWeightedLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-common-lb-config-consistent-hashing-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.ConsistentHashingLbConfig</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>close_connections_on_host_set_change</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>consistent_hashing_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-common-lb-config-consistent-hashing-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.ConsistentHashingLbConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>healthy_panic_threshold</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignore_new_hosts_until_first_hc</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>locality_weighted_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-common-lb-config-locality-weighted-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.LocalityWeightedLbConfig</a>
+			
+		</td>
+		<td>locality_config_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>override_host_status</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/health-status-set.html">envoy.config.core.v3.HealthStatusSet</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>update_merge_window</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>zone_aware_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-common-lb-config-zone-aware-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig.ZoneAwareLbConfig</a>
+			
+		</td>
+		<td>locality_config_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

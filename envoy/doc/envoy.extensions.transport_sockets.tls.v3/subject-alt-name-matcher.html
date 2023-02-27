@@ -1,0 +1,108 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher
+.withMatcher(<a href="../envoy.type.matcher.v3/string-matcher.html">types.envoy.type.matcher.v3.StringMatcher</a>)
+.withSanType(<a href="../envoy.extensions.transport_sockets.tls.v3/subject-alt-name-matcher-san-type.html">types.envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher.SanType.SAN_TYPE_UNSPECIFIED</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.transport_sockets.tls.v3/subject-alt-name-matcher-san-type.html">envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher.SanType</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>matcher</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/string-matcher.html">envoy.type.matcher.v3.StringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>san_type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/subject-alt-name-matcher-san-type.html">envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher.SanType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true,&#34;not_in&#34;:[0]}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

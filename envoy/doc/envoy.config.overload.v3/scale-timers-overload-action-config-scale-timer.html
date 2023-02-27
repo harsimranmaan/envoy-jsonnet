@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.overload.v3.ScaleTimersOverloadActionConfig.ScaleTimer</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.overload.v3.ScaleTimersOverloadActionConfig.ScaleTimer</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.overload.v3.ScaleTimersOverloadActionConfig.ScaleTimer
+.withMinScale(<a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a>)
+.withMinTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withTimer(<a href="../envoy.config.overload.v3/scale-timers-overload-action-config-timer-type.html">types.envoy.config.overload.v3.ScaleTimersOverloadActionConfig.TimerType.UNSPECIFIED</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>min_scale</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td>overload_adjust</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>min_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td>overload_adjust</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>timer</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.overload.v3/scale-timers-overload-action-config-timer-type.html">envoy.config.overload.v3.ScaleTimersOverloadActionConfig.TimerType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true,&#34;not_in&#34;:[0]}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

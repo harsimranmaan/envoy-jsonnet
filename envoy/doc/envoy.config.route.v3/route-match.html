@@ -1,0 +1,338 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RouteMatch</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RouteMatch</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RouteMatch
+.withCaseSensitive(false)
+.withConnectMatcher(<a href="../envoy.config.route.v3/route-match-connect-matcher.html">types.envoy.config.route.v3.RouteMatch.ConnectMatcher</a>)
+.withDynamicMetadata(<span class='coll'>[</span> <a href="../envoy.type.matcher.v3/metadata-matcher.html">types.envoy.type.matcher.v3.MetadataMatcher</a> <span class='coll'>]</span>)
+.withGrpc(<a href="../envoy.config.route.v3/route-match-grpc-route-match-options.html">types.envoy.config.route.v3.RouteMatch.GrpcRouteMatchOptions</a>)
+.withHeaders(<span class='coll'>[</span> <a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a> <span class='coll'>]</span>)
+.withPath('string')
+.withPathMatchPolicy(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withPathSeparatedPrefix('string')
+.withPrefix('string')
+.withQueryParameters(<span class='coll'>[</span> <a href="../envoy.config.route.v3/query-parameter-matcher.html">types.envoy.config.route.v3.QueryParameterMatcher</a> <span class='coll'>]</span>)
+.withRuntimeFraction(<a href="../envoy.config.core.v3/runtime-fractional-percent.html">types.envoy.config.core.v3.RuntimeFractionalPercent</a>)
+.withSafeRegex(<a href="../envoy.type.matcher.v3/regex-matcher.html">types.envoy.type.matcher.v3.RegexMatcher</a>)
+.withTlsContext(<a href="../envoy.config.route.v3/route-match-tls-context-match-options.html">types.envoy.config.route.v3.RouteMatch.TlsContextMatchOptions</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-match-grpc-route-match-options.html">envoy.config.route.v3.RouteMatch.GrpcRouteMatchOptions</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-match-tls-context-match-options.html">envoy.config.route.v3.RouteMatch.TlsContextMatchOptions</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-match-connect-matcher.html">envoy.config.route.v3.RouteMatch.ConnectMatcher</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>case_sensitive</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>connect_matcher</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-match-connect-matcher.html">envoy.config.route.v3.RouteMatch.ConnectMatcher</a>
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dynamic_metadata</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.type.matcher.v3/metadata-matcher.html">envoy.type.matcher.v3.MetadataMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>grpc</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-match-grpc-route-match-options.html">envoy.config.route.v3.RouteMatch.GrpcRouteMatchOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_match_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_separated_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;pattern&#34;:&#34;^[^?#]&#43;[^?#/]$&#34;}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>query_parameters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/query-parameter-matcher.html">envoy.config.route.v3.QueryParameterMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>runtime_fraction</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-fractional-percent.html">envoy.config.core.v3.RuntimeFractionalPercent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>safe_regex</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/regex-matcher.html">envoy.type.matcher.v3.RegexMatcher</a>
+			
+		</td>
+		<td>path_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>tls_context</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-match-tls-context-match-options.html">envoy.config.route.v3.RouteMatch.TlsContextMatchOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

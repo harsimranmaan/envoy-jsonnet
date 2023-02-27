@@ -1,0 +1,218 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.transport_sockets.tls.v3.TlsCertificate</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.transport_sockets.tls.v3.TlsCertificate</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.transport_sockets.tls.v3.TlsCertificate
+.withCertificateChain(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withOcspStaple(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withPassword(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withPkcs12(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withPrivateKey(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withPrivateKeyProvider(<a href="../envoy.extensions.transport_sockets.tls.v3/private-key-provider.html">types.envoy.extensions.transport_sockets.tls.v3.PrivateKeyProvider</a>)
+.withSignedCertificateTimestamp(<span class='coll'>[</span> <a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a> <span class='coll'>]</span>)
+.withWatchedDirectory(<a href="../envoy.config.core.v3/watched-directory.html">types.envoy.config.core.v3.WatchedDirectory</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>certificate_chain</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ocsp_staple</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>password</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>pkcs12</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>private_key</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>private_key_provider</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/private-key-provider.html">envoy.extensions.transport_sockets.tls.v3.PrivateKeyProvider</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>signed_certificate_timestamp</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>watched_directory</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/watched-directory.html">envoy.config.core.v3.WatchedDirectory</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

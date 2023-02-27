@@ -1,0 +1,128 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.cluster.v3.Cluster.RingHashLbConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.cluster.v3.Cluster.RingHashLbConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.cluster.v3.Cluster.RingHashLbConfig
+.withHashFunction(<a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config-hash-function.html">types.envoy.config.cluster.v3.Cluster.RingHashLbConfig.HashFunction.XX_HASH</a>)
+.withMaximumRingSize(1)
+.withMinimumRingSize(1)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config-hash-function.html">envoy.config.cluster.v3.Cluster.RingHashLbConfig.HashFunction</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>hash_function</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config-hash-function.html">envoy.config.cluster.v3.Cluster.RingHashLbConfig.HashFunction</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>maximum_ring_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-64-value.html">google.protobuf.UInt64Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint64&#34;:{&#34;lte&#34;:8388608}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>minimum_ring_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-64-value.html">google.protobuf.UInt64Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint64&#34;:{&#34;lte&#34;:8388608}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

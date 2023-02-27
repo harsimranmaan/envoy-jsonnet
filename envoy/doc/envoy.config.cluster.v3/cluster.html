@@ -1,0 +1,1178 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.cluster.v3.Cluster</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.cluster.v3.Cluster</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.cluster.v3.Cluster
+.withAltStatName('string')
+.withCircuitBreakers(<a href="../envoy.config.cluster.v3/circuit-breakers.html">types.envoy.config.cluster.v3.CircuitBreakers</a>)
+.withCleanupInterval(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withCloseConnectionsOnHostHealthFailure(false)
+.withClusterType(<a href="../envoy.config.cluster.v3/cluster-custom-cluster-type.html">types.envoy.config.cluster.v3.Cluster.CustomClusterType</a>)
+.withCommonHttpProtocolOptions(<a href="../envoy.config.core.v3/http-protocol-options.html">types.envoy.config.core.v3.HttpProtocolOptions</a>)
+.withCommonLbConfig(<a href="../envoy.config.cluster.v3/cluster-common-lb-config.html">types.envoy.config.cluster.v3.Cluster.CommonLbConfig</a>)
+.withConnectTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withConnectionPoolPerDownstreamConnection(false)
+.withDnsFailureRefreshRate(<a href="../envoy.config.cluster.v3/cluster-refresh-rate.html">types.envoy.config.cluster.v3.Cluster.RefreshRate</a>)
+.withDnsLookupFamily(<a href="../envoy.config.cluster.v3/cluster-dns-lookup-family.html">types.envoy.config.cluster.v3.Cluster.DnsLookupFamily.AUTO</a>)
+.withDnsRefreshRate(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withDnsResolutionConfig(<a href="../envoy.config.core.v3/dns-resolution-config.html">types.envoy.config.core.v3.DnsResolutionConfig</a>)
+.withDnsResolvers(<span class='coll'>[</span> <a href="../envoy.config.core.v3/address.html">types.envoy.config.core.v3.Address</a> <span class='coll'>]</span>)
+.withEdsClusterConfig(<a href="../envoy.config.cluster.v3/cluster-eds-cluster-config.html">types.envoy.config.cluster.v3.Cluster.EdsClusterConfig</a>)
+.withFilters(<span class='coll'>[</span> <a href="../envoy.config.cluster.v3/filter.html">types.envoy.config.cluster.v3.Filter</a> <span class='coll'>]</span>)
+.withHealthChecks(<span class='coll'>[</span> <a href="../envoy.config.core.v3/health-check.html">types.envoy.config.core.v3.HealthCheck</a> <span class='coll'>]</span>)
+.withHttp2ProtocolOptions(<a href="../envoy.config.core.v3/http-2-protocol-options.html">types.envoy.config.core.v3.Http2ProtocolOptions</a>)
+.withHttpProtocolOptions(<a href="../envoy.config.core.v3/http-1-protocol-options.html">types.envoy.config.core.v3.Http1ProtocolOptions</a>)
+.withIgnoreHealthOnHostRemoval(false)
+.withLbPolicy(<a href="../envoy.config.cluster.v3/cluster-lb-policy.html">types.envoy.config.cluster.v3.Cluster.LbPolicy.ROUND_ROBIN</a>)
+.withLbSubsetConfig(<a href="../envoy.config.cluster.v3/cluster-lb-subset-config.html">types.envoy.config.cluster.v3.Cluster.LbSubsetConfig</a>)
+.withLeastRequestLbConfig(<a href="../envoy.config.cluster.v3/cluster-least-request-lb-config.html">types.envoy.config.cluster.v3.Cluster.LeastRequestLbConfig</a>)
+.withLoadAssignment(<a href="../envoy.config.endpoint.v3/cluster-load-assignment.html">types.envoy.config.endpoint.v3.ClusterLoadAssignment</a>)
+.withLoadBalancingPolicy(<a href="../envoy.config.cluster.v3/load-balancing-policy.html">types.envoy.config.cluster.v3.LoadBalancingPolicy</a>)
+.withLrsServer(<a href="../envoy.config.core.v3/config-source.html">types.envoy.config.core.v3.ConfigSource</a>)
+.withMaglevLbConfig(<a href="../envoy.config.cluster.v3/cluster-maglev-lb-config.html">types.envoy.config.cluster.v3.Cluster.MaglevLbConfig</a>)
+.withMaxRequestsPerConnection(1)
+.withMetadata(<a href="../envoy.config.core.v3/metadata.html">types.envoy.config.core.v3.Metadata</a>)
+.withName('string')
+.withOriginalDstLbConfig(<a href="../envoy.config.cluster.v3/cluster-original-dst-lb-config.html">types.envoy.config.cluster.v3.Cluster.OriginalDstLbConfig</a>)
+.withOutlierDetection(<a href="../envoy.config.cluster.v3/outlier-detection.html">types.envoy.config.cluster.v3.OutlierDetection</a>)
+.withPerConnectionBufferLimitBytes(1)
+.withPreconnectPolicy(<a href="../envoy.config.cluster.v3/cluster-preconnect-policy.html">types.envoy.config.cluster.v3.Cluster.PreconnectPolicy</a>)
+.withProtocolSelection(<a href="../envoy.config.cluster.v3/cluster-cluster-protocol-selection.html">types.envoy.config.cluster.v3.Cluster.ClusterProtocolSelection.USE_CONFIGURED_PROTOCOL</a>)
+.withRespectDnsTtl(false)
+.withRingHashLbConfig(<a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config.html">types.envoy.config.cluster.v3.Cluster.RingHashLbConfig</a>)
+.withRoundRobinLbConfig(<a href="../envoy.config.cluster.v3/cluster-round-robin-lb-config.html">types.envoy.config.cluster.v3.Cluster.RoundRobinLbConfig</a>)
+.withTrackClusterStats(<a href="../envoy.config.cluster.v3/track-cluster-stats.html">types.envoy.config.cluster.v3.TrackClusterStats</a>)
+.withTrackTimeoutBudgets(false)
+.withTransportSocket(<a href="../envoy.config.core.v3/transport-socket.html">types.envoy.config.core.v3.TransportSocket</a>)
+.withTransportSocketMatches(<span class='coll'>[</span> <a href="../envoy.config.cluster.v3/cluster-transport-socket-match.html">types.envoy.config.cluster.v3.Cluster.TransportSocketMatch</a> <span class='coll'>]</span>)
+.withType(<a href="../envoy.config.cluster.v3/cluster-discovery-type.html">types.envoy.config.cluster.v3.Cluster.DiscoveryType.STATIC</a>)
+.withTypedDnsResolverConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withTypedExtensionProtocolOptions(<span class='coll'>{</span> key: <a href="../google.protobuf/any.html">types.google.protobuf.Any</a> <span class='coll'>}</span>)
+.withUpstreamBindConfig(<a href="../envoy.config.core.v3/bind-config.html">types.envoy.config.core.v3.BindConfig</a>)
+.withUpstreamConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withUpstreamConnectionOptions(<a href="../envoy.config.cluster.v3/upstream-connection-options.html">types.envoy.config.cluster.v3.UpstreamConnectionOptions</a>)
+.withUpstreamHttpProtocolOptions(<a href="../envoy.config.core.v3/upstream-http-protocol-options.html">types.envoy.config.core.v3.UpstreamHttpProtocolOptions</a>)
+.withUseTcpForDnsLookups(false)
+.withWaitForWarmOnInit(false)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-discovery-type.html">envoy.config.cluster.v3.Cluster.DiscoveryType</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-lb-policy.html">envoy.config.cluster.v3.Cluster.LbPolicy</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-dns-lookup-family.html">envoy.config.cluster.v3.Cluster.DnsLookupFamily</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-cluster-protocol-selection.html">envoy.config.cluster.v3.Cluster.ClusterProtocolSelection</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-transport-socket-match.html">envoy.config.cluster.v3.Cluster.TransportSocketMatch</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-custom-cluster-type.html">envoy.config.cluster.v3.Cluster.CustomClusterType</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-eds-cluster-config.html">envoy.config.cluster.v3.Cluster.EdsClusterConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-lb-subset-config.html">envoy.config.cluster.v3.Cluster.LbSubsetConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-slow-start-config.html">envoy.config.cluster.v3.Cluster.SlowStartConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-round-robin-lb-config.html">envoy.config.cluster.v3.Cluster.RoundRobinLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-least-request-lb-config.html">envoy.config.cluster.v3.Cluster.LeastRequestLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config.html">envoy.config.cluster.v3.Cluster.RingHashLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-maglev-lb-config.html">envoy.config.cluster.v3.Cluster.MaglevLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-original-dst-lb-config.html">envoy.config.cluster.v3.Cluster.OriginalDstLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-common-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-refresh-rate.html">envoy.config.cluster.v3.Cluster.RefreshRate</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-preconnect-policy.html">envoy.config.cluster.v3.Cluster.PreconnectPolicy</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.cluster.v3/cluster-typed-extension-protocol-options-entry.html">envoy.config.cluster.v3.Cluster.TypedExtensionProtocolOptionsEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>alt_stat_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>circuit_breakers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/circuit-breakers.html">envoy.config.cluster.v3.CircuitBreakers</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cleanup_interval</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>close_connections_on_host_health_failure</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-custom-cluster-type.html">envoy.config.cluster.v3.Cluster.CustomClusterType</a>
+			
+		</td>
+		<td>cluster_discovery_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>common_http_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-protocol-options.html">envoy.config.core.v3.HttpProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>common_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-common-lb-config.html">envoy.config.cluster.v3.Cluster.CommonLbConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>connect_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>connection_pool_per_downstream_connection</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_failure_refresh_rate</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-refresh-rate.html">envoy.config.cluster.v3.Cluster.RefreshRate</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_lookup_family</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-dns-lookup-family.html">envoy.config.cluster.v3.Cluster.DnsLookupFamily</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_refresh_rate</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{&#34;nanos&#34;:1000000}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_resolution_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/dns-resolution-config.html">envoy.config.core.v3.DnsResolutionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_resolvers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/address.html">envoy.config.core.v3.Address</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>eds_cluster_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-eds-cluster-config.html">envoy.config.cluster.v3.Cluster.EdsClusterConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>filters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.cluster.v3/filter.html">envoy.config.cluster.v3.Filter</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>health_checks</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/health-check.html">envoy.config.core.v3.HealthCheck</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http2_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-2-protocol-options.html">envoy.config.core.v3.Http2ProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-1-protocol-options.html">envoy.config.core.v3.Http1ProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignore_health_on_host_removal</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>lb_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-lb-policy.html">envoy.config.cluster.v3.Cluster.LbPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>lb_subset_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-lb-subset-config.html">envoy.config.cluster.v3.Cluster.LbSubsetConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>least_request_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-least-request-lb-config.html">envoy.config.cluster.v3.Cluster.LeastRequestLbConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>load_assignment</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.endpoint.v3/cluster-load-assignment.html">envoy.config.endpoint.v3.ClusterLoadAssignment</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>load_balancing_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/load-balancing-policy.html">envoy.config.cluster.v3.LoadBalancingPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>lrs_server</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/config-source.html">envoy.config.core.v3.ConfigSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>maglev_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-maglev-lb-config.html">envoy.config.cluster.v3.Cluster.MaglevLbConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_requests_per_connection</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>metadata</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/metadata.html">envoy.config.core.v3.Metadata</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>original_dst_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-original-dst-lb-config.html">envoy.config.cluster.v3.Cluster.OriginalDstLbConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>outlier_detection</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/outlier-detection.html">envoy.config.cluster.v3.OutlierDetection</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>per_connection_buffer_limit_bytes</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>preconnect_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-preconnect-policy.html">envoy.config.cluster.v3.Cluster.PreconnectPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>protocol_selection</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-cluster-protocol-selection.html">envoy.config.cluster.v3.Cluster.ClusterProtocolSelection</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>respect_dns_ttl</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ring_hash_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-ring-hash-lb-config.html">envoy.config.cluster.v3.Cluster.RingHashLbConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>round_robin_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-round-robin-lb-config.html">envoy.config.cluster.v3.Cluster.RoundRobinLbConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>track_cluster_stats</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/track-cluster-stats.html">envoy.config.cluster.v3.TrackClusterStats</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>track_timeout_budgets</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>transport_socket</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/transport-socket.html">envoy.config.core.v3.TransportSocket</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>transport_socket_matches</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-transport-socket-match.html">envoy.config.cluster.v3.Cluster.TransportSocketMatch</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-discovery-type.html">envoy.config.cluster.v3.Cluster.DiscoveryType</a>
+			
+		</td>
+		<td>cluster_discovery_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_dns_resolver_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_extension_protocol_options</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../google.protobuf/any.html">google.protobuf.Any</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_bind_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/bind-config.html">envoy.config.core.v3.BindConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_connection_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/upstream-connection-options.html">envoy.config.cluster.v3.UpstreamConnectionOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_http_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/upstream-http-protocol-options.html">envoy.config.core.v3.UpstreamHttpProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>use_tcp_for_dns_lookups</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>wait_for_warm_on_init</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,498 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>validate.FieldRules</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>validate.FieldRules</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.validate.FieldRules
+.withAny(<a href="../validate/any-rules.html">types.validate.AnyRules</a>)
+.withBool(<a href="../validate/bool-rules.html">types.validate.BoolRules</a>)
+.withBytes(<a href="../validate/bytes-rules.html">types.validate.BytesRules</a>)
+.withDouble(<a href="../validate/double-rules.html">types.validate.DoubleRules</a>)
+.withDuration(<a href="../validate/duration-rules.html">types.validate.DurationRules</a>)
+.withEnum(<a href="../validate/enum-rules.html">types.validate.EnumRules</a>)
+.withFixed32(<a href="../validate/fixed-32-rules.html">types.validate.Fixed32Rules</a>)
+.withFixed64(<a href="../validate/fixed-64-rules.html">types.validate.Fixed64Rules</a>)
+.withFloat(<a href="../validate/float-rules.html">types.validate.FloatRules</a>)
+.withInt32(<a href="../validate/int-32-rules.html">types.validate.Int32Rules</a>)
+.withInt64(<a href="../validate/int-64-rules.html">types.validate.Int64Rules</a>)
+.withMap(<a href="../validate/map-rules.html">types.validate.MapRules</a>)
+.withMessage(<a href="../validate/message-rules.html">types.validate.MessageRules</a>)
+.withRepeated(<a href="../validate/repeated-rules.html">types.validate.RepeatedRules</a>)
+.withSfixed32(<a href="../validate/s-fixed-32-rules.html">types.validate.SFixed32Rules</a>)
+.withSfixed64(<a href="../validate/s-fixed-64-rules.html">types.validate.SFixed64Rules</a>)
+.withSint32(<a href="../validate/s-int-32-rules.html">types.validate.SInt32Rules</a>)
+.withSint64(<a href="../validate/s-int-64-rules.html">types.validate.SInt64Rules</a>)
+.withString(<a href="../validate/string-rules.html">types.validate.StringRules</a>)
+.withTimestamp(<a href="../validate/timestamp-rules.html">types.validate.TimestampRules</a>)
+.withUint32(<a href="../validate/u-int-32-rules.html">types.validate.UInt32Rules</a>)
+.withUint64(<a href="../validate/u-int-64-rules.html">types.validate.UInt64Rules</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>any</td>
+		<td>
+			
+			
+			
+				<a href="../validate/any-rules.html">validate.AnyRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>bool</td>
+		<td>
+			
+			
+			
+				<a href="../validate/bool-rules.html">validate.BoolRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>bytes</td>
+		<td>
+			
+			
+			
+				<a href="../validate/bytes-rules.html">validate.BytesRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>double</td>
+		<td>
+			
+			
+			
+				<a href="../validate/double-rules.html">validate.DoubleRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>duration</td>
+		<td>
+			
+			
+			
+				<a href="../validate/duration-rules.html">validate.DurationRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enum</td>
+		<td>
+			
+			
+			
+				<a href="../validate/enum-rules.html">validate.EnumRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>fixed32</td>
+		<td>
+			
+			
+			
+				<a href="../validate/fixed-32-rules.html">validate.Fixed32Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>fixed64</td>
+		<td>
+			
+			
+			
+				<a href="../validate/fixed-64-rules.html">validate.Fixed64Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>float</td>
+		<td>
+			
+			
+			
+				<a href="../validate/float-rules.html">validate.FloatRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>int32</td>
+		<td>
+			
+			
+			
+				<a href="../validate/int-32-rules.html">validate.Int32Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>int64</td>
+		<td>
+			
+			
+			
+				<a href="../validate/int-64-rules.html">validate.Int64Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>map</td>
+		<td>
+			
+			
+			
+				<a href="../validate/map-rules.html">validate.MapRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>message</td>
+		<td>
+			
+			
+			
+				<a href="../validate/message-rules.html">validate.MessageRules</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>repeated</td>
+		<td>
+			
+			
+			
+				<a href="../validate/repeated-rules.html">validate.RepeatedRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sfixed32</td>
+		<td>
+			
+			
+			
+				<a href="../validate/s-fixed-32-rules.html">validate.SFixed32Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sfixed64</td>
+		<td>
+			
+			
+			
+				<a href="../validate/s-fixed-64-rules.html">validate.SFixed64Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sint32</td>
+		<td>
+			
+			
+			
+				<a href="../validate/s-int-32-rules.html">validate.SInt32Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sint64</td>
+		<td>
+			
+			
+			
+				<a href="../validate/s-int-64-rules.html">validate.SInt64Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>string</td>
+		<td>
+			
+			
+			
+				<a href="../validate/string-rules.html">validate.StringRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>timestamp</td>
+		<td>
+			
+			
+			
+				<a href="../validate/timestamp-rules.html">validate.TimestampRules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>uint32</td>
+		<td>
+			
+			
+			
+				<a href="../validate/u-int-32-rules.html">validate.UInt32Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>uint64</td>
+		<td>
+			
+			
+			
+				<a href="../validate/u-int-64-rules.html">validate.UInt64Rules</a>
+			
+		</td>
+		<td>type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

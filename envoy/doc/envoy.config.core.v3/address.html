@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.Address</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.Address</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.Address
+.withEnvoyInternalAddress(<a href="../envoy.config.core.v3/envoy-internal-address.html">types.envoy.config.core.v3.EnvoyInternalAddress</a>)
+.withPipe(<a href="../envoy.config.core.v3/pipe.html">types.envoy.config.core.v3.Pipe</a>)
+.withSocketAddress(<a href="../envoy.config.core.v3/socket-address.html">types.envoy.config.core.v3.SocketAddress</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>envoy_internal_address</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/envoy-internal-address.html">envoy.config.core.v3.EnvoyInternalAddress</a>
+			
+		</td>
+		<td>address</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>pipe</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/pipe.html">envoy.config.core.v3.Pipe</a>
+			
+		</td>
+		<td>address</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>socket_address</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/socket-address.html">envoy.config.core.v3.SocketAddress</a>
+			
+		</td>
+		<td>address</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

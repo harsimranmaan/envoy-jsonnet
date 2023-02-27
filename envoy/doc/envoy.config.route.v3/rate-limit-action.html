@@ -1,0 +1,333 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RateLimit.Action</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RateLimit.Action</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RateLimit.Action
+.withDestinationCluster(<a href="../envoy.config.route.v3/rate-limit-action-destination-cluster.html">types.envoy.config.route.v3.RateLimit.Action.DestinationCluster</a>)
+.withDynamicMetadata(<a href="../envoy.config.route.v3/rate-limit-action-dynamic-meta-data.html">types.envoy.config.route.v3.RateLimit.Action.DynamicMetaData</a>)
+.withExtension(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withGenericKey(<a href="../envoy.config.route.v3/rate-limit-action-generic-key.html">types.envoy.config.route.v3.RateLimit.Action.GenericKey</a>)
+.withHeaderValueMatch(<a href="../envoy.config.route.v3/rate-limit-action-header-value-match.html">types.envoy.config.route.v3.RateLimit.Action.HeaderValueMatch</a>)
+.withMaskedRemoteAddress(<a href="../envoy.config.route.v3/rate-limit-action-masked-remote-address.html">types.envoy.config.route.v3.RateLimit.Action.MaskedRemoteAddress</a>)
+.withMetadata(<a href="../envoy.config.route.v3/rate-limit-action-meta-data.html">types.envoy.config.route.v3.RateLimit.Action.MetaData</a>)
+.withQueryParameterValueMatch(<a href="../envoy.config.route.v3/rate-limit-action-query-parameter-value-match.html">types.envoy.config.route.v3.RateLimit.Action.QueryParameterValueMatch</a>)
+.withRemoteAddress(<a href="../envoy.config.route.v3/rate-limit-action-remote-address.html">types.envoy.config.route.v3.RateLimit.Action.RemoteAddress</a>)
+.withRequestHeaders(<a href="../envoy.config.route.v3/rate-limit-action-request-headers.html">types.envoy.config.route.v3.RateLimit.Action.RequestHeaders</a>)
+.withSourceCluster(<a href="../envoy.config.route.v3/rate-limit-action-source-cluster.html">types.envoy.config.route.v3.RateLimit.Action.SourceCluster</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-source-cluster.html">envoy.config.route.v3.RateLimit.Action.SourceCluster</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-destination-cluster.html">envoy.config.route.v3.RateLimit.Action.DestinationCluster</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-request-headers.html">envoy.config.route.v3.RateLimit.Action.RequestHeaders</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-remote-address.html">envoy.config.route.v3.RateLimit.Action.RemoteAddress</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-masked-remote-address.html">envoy.config.route.v3.RateLimit.Action.MaskedRemoteAddress</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-generic-key.html">envoy.config.route.v3.RateLimit.Action.GenericKey</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-header-value-match.html">envoy.config.route.v3.RateLimit.Action.HeaderValueMatch</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-dynamic-meta-data.html">envoy.config.route.v3.RateLimit.Action.DynamicMetaData</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-meta-data.html">envoy.config.route.v3.RateLimit.Action.MetaData</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/rate-limit-action-query-parameter-value-match.html">envoy.config.route.v3.RateLimit.Action.QueryParameterValueMatch</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>destination_cluster</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-destination-cluster.html">envoy.config.route.v3.RateLimit.Action.DestinationCluster</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dynamic_metadata</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-dynamic-meta-data.html">envoy.config.route.v3.RateLimit.Action.DynamicMetaData</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>extension</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>generic_key</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-generic-key.html">envoy.config.route.v3.RateLimit.Action.GenericKey</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>header_value_match</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-header-value-match.html">envoy.config.route.v3.RateLimit.Action.HeaderValueMatch</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>masked_remote_address</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-masked-remote-address.html">envoy.config.route.v3.RateLimit.Action.MaskedRemoteAddress</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>metadata</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-meta-data.html">envoy.config.route.v3.RateLimit.Action.MetaData</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>query_parameter_value_match</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-query-parameter-value-match.html">envoy.config.route.v3.RateLimit.Action.QueryParameterValueMatch</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>remote_address</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-remote-address.html">envoy.config.route.v3.RateLimit.Action.RemoteAddress</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-request-headers.html">envoy.config.route.v3.RateLimit.Action.RequestHeaders</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>source_cluster</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit-action-source-cluster.html">envoy.config.route.v3.RateLimit.Action.SourceCluster</a>
+			
+		</td>
+		<td>action_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.BindConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.BindConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.BindConfig
+.withAdditionalSourceAddresses(<span class='coll'>[</span> <a href="../envoy.config.core.v3/socket-address.html">types.envoy.config.core.v3.SocketAddress</a> <span class='coll'>]</span>)
+.withExtraSourceAddresses(<span class='coll'>[</span> <a href="../envoy.config.core.v3/extra-source-address.html">types.envoy.config.core.v3.ExtraSourceAddress</a> <span class='coll'>]</span>)
+.withFreebind(false)
+.withSocketOptions(<span class='coll'>[</span> <a href="../envoy.config.core.v3/socket-option.html">types.envoy.config.core.v3.SocketOption</a> <span class='coll'>]</span>)
+.withSourceAddress(<a href="../envoy.config.core.v3/socket-address.html">types.envoy.config.core.v3.SocketAddress</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>additional_source_addresses</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/socket-address.html">envoy.config.core.v3.SocketAddress</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>extra_source_addresses</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/extra-source-address.html">envoy.config.core.v3.ExtraSourceAddress</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>freebind</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>socket_options</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/socket-option.html">envoy.config.core.v3.SocketOption</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>source_address</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/socket-address.html">envoy.config.core.v3.SocketAddress</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

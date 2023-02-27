@@ -1,0 +1,248 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RedirectAction</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RedirectAction</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RedirectAction
+.withHostRedirect('string')
+.withHttpsRedirect(false)
+.withPathRedirect('string')
+.withPortRedirect(1)
+.withPrefixRewrite('string')
+.withRegexRewrite(<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">types.envoy.type.matcher.v3.RegexMatchAndSubstitute</a>)
+.withResponseCode(<a href="../envoy.config.route.v3/redirect-action-redirect-response-code.html">types.envoy.config.route.v3.RedirectAction.RedirectResponseCode.MOVED_PERMANENTLY</a>)
+.withSchemeRedirect('string')
+.withStripQuery(false)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/redirect-action-redirect-response-code.html">envoy.config.route.v3.RedirectAction.RedirectResponseCode</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>host_redirect</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>https_redirect</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>scheme_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_redirect</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>path_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>port_redirect</td>
+		<td>
+			
+			
+			
+				uint32
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>prefix_rewrite</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>path_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>regex_rewrite</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">envoy.type.matcher.v3.RegexMatchAndSubstitute</a>
+			
+		</td>
+		<td>path_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_code</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/redirect-action-redirect-response-code.html">envoy.config.route.v3.RedirectAction.RedirectResponseCode</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>scheme_redirect</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>scheme_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>strip_query</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

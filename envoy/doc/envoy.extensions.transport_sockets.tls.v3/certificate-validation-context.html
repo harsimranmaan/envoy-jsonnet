@@ -1,0 +1,348 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext
+.withAllowExpiredCertificate(false)
+.withCaCertificateProviderInstance(<a href="../envoy.extensions.transport_sockets.tls.v3/certificate-provider-plugin-instance.html">types.envoy.extensions.transport_sockets.tls.v3.CertificateProviderPluginInstance</a>)
+.withCrl(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withCustomValidatorConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withMatchSubjectAltNames(<span class='coll'>[</span> <a href="../envoy.type.matcher.v3/string-matcher.html">types.envoy.type.matcher.v3.StringMatcher</a> <span class='coll'>]</span>)
+.withMatchTypedSubjectAltNames(<span class='coll'>[</span> <a href="../envoy.extensions.transport_sockets.tls.v3/subject-alt-name-matcher.html">types.envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher</a> <span class='coll'>]</span>)
+.withMaxVerifyDepth(1)
+.withOnlyVerifyLeafCertCrl(false)
+.withRequireSignedCertificateTimestamp(false)
+.withTrustChainVerification(<a href="../envoy.extensions.transport_sockets.tls.v3/certificate-validation-context-trust-chain-verification.html">types.envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext.TrustChainVerification.VERIFY_TRUST_CHAIN</a>)
+.withTrustedCa(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+.withVerifyCertificateHash(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withVerifyCertificateSpki(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withWatchedDirectory(<a href="../envoy.config.core.v3/watched-directory.html">types.envoy.config.core.v3.WatchedDirectory</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.transport_sockets.tls.v3/certificate-validation-context-trust-chain-verification.html">envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext.TrustChainVerification</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>allow_expired_certificate</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ca_certificate_provider_instance</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/certificate-provider-plugin-instance.html">envoy.extensions.transport_sockets.tls.v3.CertificateProviderPluginInstance</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>crl</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>custom_validator_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>match_subject_alt_names</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.type.matcher.v3/string-matcher.html">envoy.type.matcher.v3.StringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>match_typed_subject_alt_names</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/subject-alt-name-matcher.html">envoy.extensions.transport_sockets.tls.v3.SubjectAltNameMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_verify_depth</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;lte&#34;:100}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>only_verify_leaf_cert_crl</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>require_signed_certificate_timestamp</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>trust_chain_verification</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/certificate-validation-context-trust-chain-verification.html">envoy.extensions.transport_sockets.tls.v3.CertificateValidationContext.TrustChainVerification</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>trusted_ca</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>verify_certificate_hash</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;max_bytes&#34;:95,&#34;min_len&#34;:64}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>verify_certificate_spki</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;max_bytes&#34;:44,&#34;min_len&#34;:44}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>watched_directory</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/watched-directory.html">envoy.config.core.v3.WatchedDirectory</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

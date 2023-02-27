@@ -1,0 +1,778 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RouteAction</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RouteAction</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RouteAction
+.withAppendXForwardedHost(false)
+.withAutoHostRewrite(false)
+.withCluster('string')
+.withClusterHeader('string')
+.withClusterNotFoundResponseCode(<a href="../envoy.config.route.v3/route-action-cluster-not-found-response-code.html">types.envoy.config.route.v3.RouteAction.ClusterNotFoundResponseCode.SERVICE_UNAVAILABLE</a>)
+.withClusterSpecifierPlugin('string')
+.withCors(<a href="../envoy.config.route.v3/cors-policy.html">types.envoy.config.route.v3.CorsPolicy</a>)
+.withEarlyDataPolicy(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withGrpcTimeoutOffset(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withHashPolicy(<span class='coll'>[</span> <a href="../envoy.config.route.v3/route-action-hash-policy.html">types.envoy.config.route.v3.RouteAction.HashPolicy</a> <span class='coll'>]</span>)
+.withHedgePolicy(<a href="../envoy.config.route.v3/hedge-policy.html">types.envoy.config.route.v3.HedgePolicy</a>)
+.withHostRewriteHeader('string')
+.withHostRewriteLiteral('string')
+.withHostRewritePathRegex(<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">types.envoy.type.matcher.v3.RegexMatchAndSubstitute</a>)
+.withIdleTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withIncludeVhRateLimits(false)
+.withInlineClusterSpecifierPlugin(<a href="../envoy.config.route.v3/cluster-specifier-plugin.html">types.envoy.config.route.v3.ClusterSpecifierPlugin</a>)
+.withInternalRedirectAction(<a href="../envoy.config.route.v3/route-action-internal-redirect-action.html">types.envoy.config.route.v3.RouteAction.InternalRedirectAction.PASS_THROUGH_INTERNAL_REDIRECT</a>)
+.withInternalRedirectPolicy(<a href="../envoy.config.route.v3/internal-redirect-policy.html">types.envoy.config.route.v3.InternalRedirectPolicy</a>)
+.withMaxGrpcTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withMaxInternalRedirects(1)
+.withMaxStreamDuration(<a href="../envoy.config.route.v3/route-action-max-stream-duration.html">types.envoy.config.route.v3.RouteAction.MaxStreamDuration</a>)
+.withMetadataMatch(<a href="../envoy.config.core.v3/metadata.html">types.envoy.config.core.v3.Metadata</a>)
+.withPathRewritePolicy(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withPrefixRewrite('string')
+.withPriority(<a href="../envoy.config.core.v3/routing-priority.html">types.envoy.config.core.v3.RoutingPriority.DEFAULT</a>)
+.withRateLimits(<span class='coll'>[</span> <a href="../envoy.config.route.v3/rate-limit.html">types.envoy.config.route.v3.RateLimit</a> <span class='coll'>]</span>)
+.withRegexRewrite(<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">types.envoy.type.matcher.v3.RegexMatchAndSubstitute</a>)
+.withRequestMirrorPolicies(<span class='coll'>[</span> <a href="../envoy.config.route.v3/route-action-request-mirror-policy.html">types.envoy.config.route.v3.RouteAction.RequestMirrorPolicy</a> <span class='coll'>]</span>)
+.withRetryPolicy(<a href="../envoy.config.route.v3/retry-policy.html">types.envoy.config.route.v3.RetryPolicy</a>)
+.withRetryPolicyTypedConfig(<a href="../google.protobuf/any.html">types.google.protobuf.Any</a>)
+.withTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withUpgradeConfigs(<span class='coll'>[</span> <a href="../envoy.config.route.v3/route-action-upgrade-config.html">types.envoy.config.route.v3.RouteAction.UpgradeConfig</a> <span class='coll'>]</span>)
+.withWeightedClusters(<a href="../envoy.config.route.v3/weighted-cluster.html">types.envoy.config.route.v3.WeightedCluster</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-cluster-not-found-response-code.html">envoy.config.route.v3.RouteAction.ClusterNotFoundResponseCode</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-internal-redirect-action.html">envoy.config.route.v3.RouteAction.InternalRedirectAction</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-request-mirror-policy.html">envoy.config.route.v3.RouteAction.RequestMirrorPolicy</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-hash-policy.html">envoy.config.route.v3.RouteAction.HashPolicy</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-upgrade-config.html">envoy.config.route.v3.RouteAction.UpgradeConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-action-max-stream-duration.html">envoy.config.route.v3.RouteAction.MaxStreamDuration</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>append_x_forwarded_host</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>auto_host_rewrite</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td>host_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>cluster_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_header</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>cluster_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;min_len&#34;:1,&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_not_found_response_code</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-action-cluster-not-found-response-code.html">envoy.config.route.v3.RouteAction.ClusterNotFoundResponseCode</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_specifier_plugin</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>cluster_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cors</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/cors-policy.html">envoy.config.route.v3.CorsPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>early_data_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>grpc_timeout_offset</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>hash_policy</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/route-action-hash-policy.html">envoy.config.route.v3.RouteAction.HashPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>hedge_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/hedge-policy.html">envoy.config.route.v3.HedgePolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>host_rewrite_header</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>host_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>host_rewrite_literal</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>host_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>host_rewrite_path_regex</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">envoy.type.matcher.v3.RegexMatchAndSubstitute</a>
+			
+		</td>
+		<td>host_rewrite_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>idle_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>include_vh_rate_limits</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>inline_cluster_specifier_plugin</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/cluster-specifier-plugin.html">envoy.config.route.v3.ClusterSpecifierPlugin</a>
+			
+		</td>
+		<td>cluster_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>internal_redirect_action</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-action-internal-redirect-action.html">envoy.config.route.v3.RouteAction.InternalRedirectAction</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>internal_redirect_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/internal-redirect-policy.html">envoy.config.route.v3.InternalRedirectPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_grpc_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_internal_redirects</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_stream_duration</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-action-max-stream-duration.html">envoy.config.route.v3.RouteAction.MaxStreamDuration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>metadata_match</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/metadata.html">envoy.config.core.v3.Metadata</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_rewrite_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>prefix_rewrite</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>priority</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/routing-priority.html">envoy.config.core.v3.RoutingPriority</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limits</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/rate-limit.html">envoy.config.route.v3.RateLimit</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>regex_rewrite</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/regex-match-and-substitute.html">envoy.type.matcher.v3.RegexMatchAndSubstitute</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_mirror_policies</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/route-action-request-mirror-policy.html">envoy.config.route.v3.RouteAction.RequestMirrorPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/retry-policy.html">envoy.config.route.v3.RetryPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>retry_policy_typed_config</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/any.html">google.protobuf.Any</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upgrade_configs</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/route-action-upgrade-config.html">envoy.config.route.v3.RouteAction.UpgradeConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>weighted_clusters</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/weighted-cluster.html">envoy.config.route.v3.WeightedCluster</a>
+			
+		</td>
+		<td>cluster_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,248 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.ApiConfigSource</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.ApiConfigSource</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.ApiConfigSource
+.withApiType(<a href="../envoy.config.core.v3/api-config-source-api-type.html">types.envoy.config.core.v3.ApiConfigSource.ApiType.DEPRECATED_AND_UNAVAILABLE_DO_NOT_USE</a>)
+.withClusterNames(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withConfigValidators(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withGrpcServices(<span class='coll'>[</span> <a href="../envoy.config.core.v3/grpc-service.html">types.envoy.config.core.v3.GrpcService</a> <span class='coll'>]</span>)
+.withRateLimitSettings(<a href="../envoy.config.core.v3/rate-limit-settings.html">types.envoy.config.core.v3.RateLimitSettings</a>)
+.withRefreshDelay(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withRequestTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withSetNodeOnFirstMessageOnly(false)
+.withTransportApiVersion(<a href="../envoy.config.core.v3/api-version.html">types.envoy.config.core.v3.ApiVersion.AUTO</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.core.v3/api-config-source-api-type.html">envoy.config.core.v3.ApiConfigSource.ApiType</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>api_type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/api-config-source-api-type.html">envoy.config.core.v3.ApiConfigSource.ApiType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_names</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>config_validators</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>grpc_services</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/grpc-service.html">envoy.config.core.v3.GrpcService</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limit_settings</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/rate-limit-settings.html">envoy.config.core.v3.RateLimitSettings</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>refresh_delay</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>set_node_on_first_message_only</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>transport_api_version</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/api-version.html">envoy.config.core.v3.ApiVersion</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

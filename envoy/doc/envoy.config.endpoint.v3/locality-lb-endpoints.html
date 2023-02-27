@@ -1,0 +1,208 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.endpoint.v3.LocalityLbEndpoints</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.endpoint.v3.LocalityLbEndpoints</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.endpoint.v3.LocalityLbEndpoints
+.withLbEndpoints(<span class='coll'>[</span> <a href="../envoy.config.endpoint.v3/lb-endpoint.html">types.envoy.config.endpoint.v3.LbEndpoint</a> <span class='coll'>]</span>)
+.withLedsClusterLocalityConfig(<a href="../envoy.config.endpoint.v3/leds-cluster-locality-config.html">types.envoy.config.endpoint.v3.LedsClusterLocalityConfig</a>)
+.withLoadBalancerEndpoints(<a href="../envoy.config.endpoint.v3/locality-lb-endpoints-lb-endpoint-list.html">types.envoy.config.endpoint.v3.LocalityLbEndpoints.LbEndpointList</a>)
+.withLoadBalancingWeight(1)
+.withLocality(<a href="../envoy.config.core.v3/locality.html">types.envoy.config.core.v3.Locality</a>)
+.withPriority(1)
+.withProximity(1)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.endpoint.v3/locality-lb-endpoints-lb-endpoint-list.html">envoy.config.endpoint.v3.LocalityLbEndpoints.LbEndpointList</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>lb_endpoints</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.endpoint.v3/lb-endpoint.html">envoy.config.endpoint.v3.LbEndpoint</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>leds_cluster_locality_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.endpoint.v3/leds-cluster-locality-config.html">envoy.config.endpoint.v3.LedsClusterLocalityConfig</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>load_balancer_endpoints</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.endpoint.v3/locality-lb-endpoints-lb-endpoint-list.html">envoy.config.endpoint.v3.LocalityLbEndpoints.LbEndpointList</a>
+			
+		</td>
+		<td>lb_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>load_balancing_weight</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>locality</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/locality.html">envoy.config.core.v3.Locality</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>priority</td>
+		<td>
+			
+			
+			
+				uint32
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;lte&#34;:128}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>proximity</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

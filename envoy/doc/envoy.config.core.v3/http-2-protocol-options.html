@@ -1,0 +1,368 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.Http2ProtocolOptions</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.Http2ProtocolOptions</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.Http2ProtocolOptions
+.withAllowConnect(false)
+.withAllowMetadata(false)
+.withConnectionKeepalive(<a href="../envoy.config.core.v3/keepalive-settings.html">types.envoy.config.core.v3.KeepaliveSettings</a>)
+.withCustomSettingsParameters(<span class='coll'>[</span> <a href="../envoy.config.core.v3/http-2-protocol-options-settings-parameter.html">types.envoy.config.core.v3.Http2ProtocolOptions.SettingsParameter</a> <span class='coll'>]</span>)
+.withHpackTableSize(1)
+.withInitialConnectionWindowSize(1)
+.withInitialStreamWindowSize(1)
+.withMaxConcurrentStreams(1)
+.withMaxConsecutiveInboundFramesWithEmptyPayload(1)
+.withMaxInboundPriorityFramesPerStream(1)
+.withMaxInboundWindowUpdateFramesPerDataFrameSent(1)
+.withMaxOutboundControlFrames(1)
+.withMaxOutboundFrames(1)
+.withOverrideStreamErrorOnInvalidHttpMessage(false)
+.withStreamErrorOnInvalidHttpMessaging(false)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.core.v3/http-2-protocol-options-settings-parameter.html">envoy.config.core.v3.Http2ProtocolOptions.SettingsParameter</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>allow_connect</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>allow_metadata</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>connection_keepalive</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/keepalive-settings.html">envoy.config.core.v3.KeepaliveSettings</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>custom_settings_parameters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/http-2-protocol-options-settings-parameter.html">envoy.config.core.v3.Http2ProtocolOptions.SettingsParameter</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>hpack_table_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>initial_connection_window_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:65535,&#34;lte&#34;:2147483647}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>initial_stream_window_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:65535,&#34;lte&#34;:2147483647}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_concurrent_streams</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1,&#34;lte&#34;:2147483647}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_consecutive_inbound_frames_with_empty_payload</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_inbound_priority_frames_per_stream</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_inbound_window_update_frames_per_data_frame_sent</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_outbound_control_frames</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_outbound_frames</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>override_stream_error_on_invalid_http_message</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stream_error_on_invalid_http_messaging</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

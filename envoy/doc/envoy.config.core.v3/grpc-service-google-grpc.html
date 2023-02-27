@@ -1,0 +1,248 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.GrpcService.GoogleGrpc</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.GrpcService.GoogleGrpc</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.GrpcService.GoogleGrpc
+.withCallCredentials(<span class='coll'>[</span> <a href="../envoy.config.core.v3/grpc-service-google-grpc-call-credentials.html">types.envoy.config.core.v3.GrpcService.GoogleGrpc.CallCredentials</a> <span class='coll'>]</span>)
+.withChannelArgs(<a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-args.html">types.envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelArgs</a>)
+.withChannelCredentials(<a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-credentials.html">types.envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelCredentials</a>)
+.withConfig(<a href="../google.protobuf/struct.html">types.google.protobuf.Struct</a>)
+.withCredentialsFactoryName('string')
+.withPerStreamBufferLimitBytes(1)
+.withStatPrefix('string')
+.withTargetUri('string')
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.core.v3/grpc-service-google-grpc-ssl-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.SslCredentials</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.core.v3/grpc-service-google-grpc-google-local-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.GoogleLocalCredentials</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelCredentials</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.core.v3/grpc-service-google-grpc-call-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.CallCredentials</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-args.html">envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelArgs</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>call_credentials</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/grpc-service-google-grpc-call-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.CallCredentials</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>channel_args</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-args.html">envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelArgs</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>channel_credentials</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/grpc-service-google-grpc-channel-credentials.html">envoy.config.core.v3.GrpcService.GoogleGrpc.ChannelCredentials</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>config</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/struct.html">google.protobuf.Struct</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>credentials_factory_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>per_stream_buffer_limit_bytes</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>target_uri</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

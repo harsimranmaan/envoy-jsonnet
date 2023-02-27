@@ -1,0 +1,758 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.bootstrap.v3.Bootstrap</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.bootstrap.v3.Bootstrap</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.bootstrap.v3.Bootstrap
+.withAdmin(<a href="../envoy.config.bootstrap.v3/admin.html">types.envoy.config.bootstrap.v3.Admin</a>)
+.withBootstrapExtensions(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withCertificateProviderInstances(<span class='coll'>{</span> key: <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>}</span>)
+.withClusterManager(<a href="../envoy.config.bootstrap.v3/cluster-manager.html">types.envoy.config.bootstrap.v3.ClusterManager</a>)
+.withConfigSources(<span class='coll'>[</span> <a href="../envoy.config.core.v3/config-source.html">types.envoy.config.core.v3.ConfigSource</a> <span class='coll'>]</span>)
+.withDefaultConfigSource(<a href="../envoy.config.core.v3/config-source.html">types.envoy.config.core.v3.ConfigSource</a>)
+.withDefaultRegexEngine(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withDefaultSocketInterface('string')
+.withDnsResolutionConfig(<a href="../envoy.config.core.v3/dns-resolution-config.html">types.envoy.config.core.v3.DnsResolutionConfig</a>)
+.withDynamicResources(<a href="../envoy.config.bootstrap.v3/bootstrap-dynamic-resources.html">types.envoy.config.bootstrap.v3.Bootstrap.DynamicResources</a>)
+.withEnableDispatcherStats(false)
+.withFatalActions(<span class='coll'>[</span> <a href="../envoy.config.bootstrap.v3/fatal-action.html">types.envoy.config.bootstrap.v3.FatalAction</a> <span class='coll'>]</span>)
+.withFlagsPath('string')
+.withHdsConfig(<a href="../envoy.config.core.v3/api-config-source.html">types.envoy.config.core.v3.ApiConfigSource</a>)
+.withHeaderPrefix('string')
+.withInlineHeaders(<span class='coll'>[</span> <a href="../envoy.config.bootstrap.v3/custom-inline-header.html">types.envoy.config.bootstrap.v3.CustomInlineHeader</a> <span class='coll'>]</span>)
+.withLayeredRuntime(<a href="../envoy.config.bootstrap.v3/layered-runtime.html">types.envoy.config.bootstrap.v3.LayeredRuntime</a>)
+.withNode(<a href="../envoy.config.core.v3/node.html">types.envoy.config.core.v3.Node</a>)
+.withNodeContextParams(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withOverloadManager(<a href="../envoy.config.overload.v3/overload-manager.html">types.envoy.config.overload.v3.OverloadManager</a>)
+.withPerfTracingFilePath('string')
+.withStaticResources(<a href="../envoy.config.bootstrap.v3/bootstrap-static-resources.html">types.envoy.config.bootstrap.v3.Bootstrap.StaticResources</a>)
+.withStatsConfig(<a href="../envoy.config.metrics.v3/stats-config.html">types.envoy.config.metrics.v3.StatsConfig</a>)
+.withStatsFlushInterval(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withStatsFlushOnAdmin(false)
+.withStatsServerVersionOverride(1)
+.withStatsSinks(<span class='coll'>[</span> <a href="../envoy.config.metrics.v3/stats-sink.html">types.envoy.config.metrics.v3.StatsSink</a> <span class='coll'>]</span>)
+.withTracing(<a href="../envoy.config.trace.v3/tracing.html">types.envoy.config.trace.v3.Tracing</a>)
+.withTypedDnsResolverConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withUseTcpForDnsLookups(false)
+.withWatchdog(<a href="../envoy.config.bootstrap.v3/watchdog.html">types.envoy.config.bootstrap.v3.Watchdog</a>)
+.withWatchdogs(<a href="../envoy.config.bootstrap.v3/watchdogs.html">types.envoy.config.bootstrap.v3.Watchdogs</a>)
+.withXdsConfigTrackerExtension(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withXdsDelegateExtension(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.bootstrap.v3/bootstrap-static-resources.html">envoy.config.bootstrap.v3.Bootstrap.StaticResources</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.bootstrap.v3/bootstrap-dynamic-resources.html">envoy.config.bootstrap.v3.Bootstrap.DynamicResources</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.bootstrap.v3/bootstrap-certificate-provider-instances-entry.html">envoy.config.bootstrap.v3.Bootstrap.CertificateProviderInstancesEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>admin</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/admin.html">envoy.config.bootstrap.v3.Admin</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>bootstrap_extensions</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>certificate_provider_instances</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_manager</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/cluster-manager.html">envoy.config.bootstrap.v3.ClusterManager</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>config_sources</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/config-source.html">envoy.config.core.v3.ConfigSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>default_config_source</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/config-source.html">envoy.config.core.v3.ConfigSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>default_regex_engine</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>default_socket_interface</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_resolution_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/dns-resolution-config.html">envoy.config.core.v3.DnsResolutionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dynamic_resources</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/bootstrap-dynamic-resources.html">envoy.config.bootstrap.v3.Bootstrap.DynamicResources</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enable_dispatcher_stats</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>fatal_actions</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.bootstrap.v3/fatal-action.html">envoy.config.bootstrap.v3.FatalAction</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>flags_path</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>hds_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/api-config-source.html">envoy.config.core.v3.ApiConfigSource</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>header_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>inline_headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.bootstrap.v3/custom-inline-header.html">envoy.config.bootstrap.v3.CustomInlineHeader</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>layered_runtime</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/layered-runtime.html">envoy.config.bootstrap.v3.LayeredRuntime</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>node</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/node.html">envoy.config.core.v3.Node</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>node_context_params</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>overload_manager</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.overload.v3/overload-manager.html">envoy.config.overload.v3.OverloadManager</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>perf_tracing_file_path</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>static_resources</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/bootstrap-static-resources.html">envoy.config.bootstrap.v3.Bootstrap.StaticResources</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stats_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.metrics.v3/stats-config.html">envoy.config.metrics.v3.StatsConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stats_flush_interval</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{&#34;nanos&#34;:1000000},&#34;lt&#34;:{&#34;seconds&#34;:300}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stats_flush_on_admin</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>stats_flush</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Bool&#34;:{&#34;const&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stats_server_version_override</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-64-value.html">google.protobuf.UInt64Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stats_sinks</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.metrics.v3/stats-sink.html">envoy.config.metrics.v3.StatsSink</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>tracing</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.trace.v3/tracing.html">envoy.config.trace.v3.Tracing</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_dns_resolver_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>use_tcp_for_dns_lookups</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>watchdog</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/watchdog.html">envoy.config.bootstrap.v3.Watchdog</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>watchdogs</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.bootstrap.v3/watchdogs.html">envoy.config.bootstrap.v3.Watchdogs</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>xds_config_tracker_extension</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>xds_delegate_extension</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

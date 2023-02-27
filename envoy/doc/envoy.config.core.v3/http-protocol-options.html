@@ -1,0 +1,188 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.HttpProtocolOptions</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.HttpProtocolOptions</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.HttpProtocolOptions
+.withHeadersWithUnderscoresAction(<a href="../envoy.config.core.v3/http-protocol-options-headers-with-underscores-action.html">types.envoy.config.core.v3.HttpProtocolOptions.HeadersWithUnderscoresAction.ALLOW</a>)
+.withIdleTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withMaxConnectionDuration(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withMaxHeadersCount(1)
+.withMaxRequestsPerConnection(1)
+.withMaxStreamDuration(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.core.v3/http-protocol-options-headers-with-underscores-action.html">envoy.config.core.v3.HttpProtocolOptions.HeadersWithUnderscoresAction</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>headers_with_underscores_action</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-protocol-options-headers-with-underscores-action.html">envoy.config.core.v3.HttpProtocolOptions.HeadersWithUnderscoresAction</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>idle_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_connection_duration</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_headers_count</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_requests_per_connection</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_stream_duration</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+
