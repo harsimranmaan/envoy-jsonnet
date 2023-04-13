@@ -1,0 +1,378 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.ext_authz.v3.ExtAuthz</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.ext_authz.v3.ExtAuthz</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.ext_authz.v3.ExtAuthz
+.withAllowedHeaders(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withBootstrapMetadataLabelsKey('string')
+.withClearRouteCache(false)
+.withDenyAtDisable(<a href="../envoy.config.core.v3/runtime-feature-flag.html">types.envoy.config.core.v3.RuntimeFeatureFlag</a>)
+.withFailureModeAllow(false)
+.withFilterEnabled(<a href="../envoy.config.core.v3/runtime-fractional-percent.html">types.envoy.config.core.v3.RuntimeFractionalPercent</a>)
+.withFilterEnabledMetadata(<a href="../envoy.type.matcher.v3/metadata-matcher.html">types.envoy.type.matcher.v3.MetadataMatcher</a>)
+.withGrpcService(<a href="../envoy.config.core.v3/grpc-service.html">types.envoy.config.core.v3.GrpcService</a>)
+.withHttpService(<a href="../envoy.extensions.filters.http.ext_authz.v3/http-service.html">types.envoy.extensions.filters.http.ext_authz.v3.HttpService</a>)
+.withIncludePeerCertificate(false)
+.withMetadataContextNamespaces(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withStatPrefix('string')
+.withStatusOnError(<a href="../envoy.type.v3/http-status.html">types.envoy.type.v3.HttpStatus</a>)
+.withTransportApiVersion(<a href="../envoy.config.core.v3/api-version.html">types.envoy.config.core.v3.ApiVersion.AUTO</a>)
+.withTypedMetadataContextNamespaces(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withWithRequestBody(<a href="../envoy.extensions.filters.http.ext_authz.v3/buffer-settings.html">types.envoy.extensions.filters.http.ext_authz.v3.BufferSettings</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>allowed_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>bootstrap_metadata_labels_key</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>clear_route_cache</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>deny_at_disable</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-feature-flag.html">envoy.config.core.v3.RuntimeFeatureFlag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>failure_mode_allow</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>filter_enabled</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-fractional-percent.html">envoy.config.core.v3.RuntimeFractionalPercent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>filter_enabled_metadata</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/metadata-matcher.html">envoy.type.matcher.v3.MetadataMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>grpc_service</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/grpc-service.html">envoy.config.core.v3.GrpcService</a>
+			
+		</td>
+		<td>services</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http_service</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.ext_authz.v3/http-service.html">envoy.extensions.filters.http.ext_authz.v3.HttpService</a>
+			
+		</td>
+		<td>services</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>include_peer_certificate</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>metadata_context_namespaces</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>status_on_error</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/http-status.html">envoy.type.v3.HttpStatus</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>transport_api_version</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/api-version.html">envoy.config.core.v3.ApiVersion</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_metadata_context_namespaces</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>with_request_body</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.ext_authz.v3/buffer-settings.html">envoy.extensions.filters.http.ext_authz.v3.BufferSettings</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

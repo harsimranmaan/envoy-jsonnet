@@ -1,0 +1,138 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.local_ratelimit.v3.LocalRateLimit</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.local_ratelimit.v3.LocalRateLimit</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.local_ratelimit.v3.LocalRateLimit
+.withRuntimeEnabled(<a href="../envoy.config.core.v3/runtime-feature-flag.html">types.envoy.config.core.v3.RuntimeFeatureFlag</a>)
+.withShareKey('string')
+.withStatPrefix('string')
+.withTokenBucket(<a href="../envoy.type.v3/token-bucket.html">types.envoy.type.v3.TokenBucket</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>runtime_enabled</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-feature-flag.html">envoy.config.core.v3.RuntimeFeatureFlag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>share_key</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>token_bucket</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/token-bucket.html">envoy.type.v3.TokenBucket</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

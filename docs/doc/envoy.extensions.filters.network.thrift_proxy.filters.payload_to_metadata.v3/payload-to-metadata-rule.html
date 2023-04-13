@@ -1,0 +1,158 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.Rule</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.Rule</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.Rule
+.withFieldSelector(<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-field-selector.html">types.envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.FieldSelector</a>)
+.withMethodName('string')
+.withOnMissing(<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-key-value-pair.html">types.envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.KeyValuePair</a>)
+.withOnPresent(<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-key-value-pair.html">types.envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.KeyValuePair</a>)
+.withServiceName('string')
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>field_selector</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-field-selector.html">envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.FieldSelector</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>method_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>match_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>on_missing</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-key-value-pair.html">envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.KeyValuePair</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>on_present</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3/payload-to-metadata-key-value-pair.html">envoy.extensions.filters.network.thrift_proxy.filters.payload_to_metadata.v3.PayloadToMetadata.KeyValuePair</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>service_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>match_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

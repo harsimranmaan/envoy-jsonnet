@@ -1,0 +1,208 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.admission_control.v3.AdmissionControl</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.admission_control.v3.AdmissionControl</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.admission_control.v3.AdmissionControl
+.withAggression(<a href="../envoy.config.core.v3/runtime-double.html">types.envoy.config.core.v3.RuntimeDouble</a>)
+.withEnabled(<a href="../envoy.config.core.v3/runtime-feature-flag.html">types.envoy.config.core.v3.RuntimeFeatureFlag</a>)
+.withMaxRejectionProbability(<a href="../envoy.config.core.v3/runtime-percent.html">types.envoy.config.core.v3.RuntimePercent</a>)
+.withRpsThreshold(<a href="../envoy.config.core.v3/runtime-u-int-32.html">types.envoy.config.core.v3.RuntimeUInt32</a>)
+.withSamplingWindow(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withSrThreshold(<a href="../envoy.config.core.v3/runtime-percent.html">types.envoy.config.core.v3.RuntimePercent</a>)
+.withSuccessCriteria(<a href="../envoy.extensions.filters.http.admission_control.v3/admission-control-success-criteria.html">types.envoy.extensions.filters.http.admission_control.v3.AdmissionControl.SuccessCriteria</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.admission_control.v3/admission-control-success-criteria.html">envoy.extensions.filters.http.admission_control.v3.AdmissionControl.SuccessCriteria</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>aggression</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-double.html">envoy.config.core.v3.RuntimeDouble</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enabled</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-feature-flag.html">envoy.config.core.v3.RuntimeFeatureFlag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_rejection_probability</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-percent.html">envoy.config.core.v3.RuntimePercent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rps_threshold</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-u-int-32.html">envoy.config.core.v3.RuntimeUInt32</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sampling_window</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>sr_threshold</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-percent.html">envoy.config.core.v3.RuntimePercent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>success_criteria</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.admission_control.v3/admission-control-success-criteria.html">envoy.extensions.filters.http.admission_control.v3.AdmissionControl.SuccessCriteria</a>
+			
+		</td>
+		<td>evaluation_criteria</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

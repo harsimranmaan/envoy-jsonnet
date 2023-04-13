@@ -1,0 +1,338 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.common.dynamic_forward_proxy.v3.DnsCacheConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.common.dynamic_forward_proxy.v3.DnsCacheConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.common.dynamic_forward_proxy.v3.DnsCacheConfig
+.withDnsCacheCircuitBreaker(<a href="../envoy.extensions.common.dynamic_forward_proxy.v3/dns-cache-circuit-breakers.html">types.envoy.extensions.common.dynamic_forward_proxy.v3.DnsCacheCircuitBreakers</a>)
+.withDnsFailureRefreshRate(<a href="../envoy.config.cluster.v3/cluster-refresh-rate.html">types.envoy.config.cluster.v3.Cluster.RefreshRate</a>)
+.withDnsLookupFamily(<a href="../envoy.config.cluster.v3/cluster-dns-lookup-family.html">types.envoy.config.cluster.v3.Cluster.DnsLookupFamily.AUTO</a>)
+.withDnsMinRefreshRate(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withDnsQueryTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withDnsRefreshRate(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withDnsResolutionConfig(<a href="../envoy.config.core.v3/dns-resolution-config.html">types.envoy.config.core.v3.DnsResolutionConfig</a>)
+.withHostTtl(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withKeyValueConfig(<a href="../envoy.config.common.key_value.v3/key-value-store-config.html">types.envoy.config.common.key_value.v3.KeyValueStoreConfig</a>)
+.withMaxHosts(1)
+.withName('string')
+.withPreresolveHostnames(<span class='coll'>[</span> <a href="../envoy.config.core.v3/socket-address.html">types.envoy.config.core.v3.SocketAddress</a> <span class='coll'>]</span>)
+.withTypedDnsResolverConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withUseTcpForDnsLookups(false)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>dns_cache_circuit_breaker</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.common.dynamic_forward_proxy.v3/dns-cache-circuit-breakers.html">envoy.extensions.common.dynamic_forward_proxy.v3.DnsCacheCircuitBreakers</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_failure_refresh_rate</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-refresh-rate.html">envoy.config.cluster.v3.Cluster.RefreshRate</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_lookup_family</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.cluster.v3/cluster-dns-lookup-family.html">envoy.config.cluster.v3.Cluster.DnsLookupFamily</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_min_refresh_rate</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{&#34;seconds&#34;:5}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_query_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_refresh_rate</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{&#34;nanos&#34;:1000000}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dns_resolution_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/dns-resolution-config.html">envoy.config.core.v3.DnsResolutionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>host_ttl</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>key_value_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.common.key_value.v3/key-value-store-config.html">envoy.config.common.key_value.v3.KeyValueStoreConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_hosts</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gt&#34;:0}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>preresolve_hostnames</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/socket-address.html">envoy.config.core.v3.SocketAddress</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_dns_resolver_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>use_tcp_for_dns_lookups</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

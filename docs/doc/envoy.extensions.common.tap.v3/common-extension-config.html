@@ -1,0 +1,98 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.common.tap.v3.CommonExtensionConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.common.tap.v3.CommonExtensionConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.common.tap.v3.CommonExtensionConfig
+.withAdminConfig(<a href="../envoy.extensions.common.tap.v3/admin-config.html">types.envoy.extensions.common.tap.v3.AdminConfig</a>)
+.withStaticConfig(<a href="../envoy.config.tap.v3/tap-config.html">types.envoy.config.tap.v3.TapConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>admin_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.common.tap.v3/admin-config.html">envoy.extensions.common.tap.v3.AdminConfig</a>
+			
+		</td>
+		<td>config_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>static_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/tap-config.html">envoy.config.tap.v3.TapConfig</a>
+			
+		</td>
+		<td>config_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

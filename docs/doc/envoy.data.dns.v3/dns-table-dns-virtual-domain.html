@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.data.dns.v3.DnsTable.DnsVirtualDomain</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.data.dns.v3.DnsTable.DnsVirtualDomain</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.data.dns.v3.DnsTable.DnsVirtualDomain
+.withAnswerTtl(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withEndpoint(<a href="../envoy.data.dns.v3/dns-table-dns-endpoint.html">types.envoy.data.dns.v3.DnsTable.DnsEndpoint</a>)
+.withName('string')
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>answer_ttl</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{&#34;seconds&#34;:30}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>endpoint</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.data.dns.v3/dns-table-dns-endpoint.html">envoy.data.dns.v3.DnsTable.DnsEndpoint</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

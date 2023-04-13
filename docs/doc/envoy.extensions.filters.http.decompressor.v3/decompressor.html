@@ -1,0 +1,138 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.decompressor.v3.Decompressor</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.decompressor.v3.Decompressor</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.decompressor.v3.Decompressor
+.withDecompressorLibrary(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withRequestDirectionConfig(<a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-request-direction-config.html">types.envoy.extensions.filters.http.decompressor.v3.Decompressor.RequestDirectionConfig</a>)
+.withResponseDirectionConfig(<a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-response-direction-config.html">types.envoy.extensions.filters.http.decompressor.v3.Decompressor.ResponseDirectionConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-common-direction-config.html">envoy.extensions.filters.http.decompressor.v3.Decompressor.CommonDirectionConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-request-direction-config.html">envoy.extensions.filters.http.decompressor.v3.Decompressor.RequestDirectionConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-response-direction-config.html">envoy.extensions.filters.http.decompressor.v3.Decompressor.ResponseDirectionConfig</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>decompressor_library</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_direction_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-request-direction-config.html">envoy.extensions.filters.http.decompressor.v3.Decompressor.RequestDirectionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_direction_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.decompressor.v3/decompressor-response-direction-config.html">envoy.extensions.filters.http.decompressor.v3.Decompressor.ResponseDirectionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

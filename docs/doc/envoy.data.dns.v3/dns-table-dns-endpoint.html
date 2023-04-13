@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.data.dns.v3.DnsTable.DnsEndpoint</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.data.dns.v3.DnsTable.DnsEndpoint</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.data.dns.v3.DnsTable.DnsEndpoint
+.withAddressList(<a href="../envoy.data.dns.v3/dns-table-address-list.html">types.envoy.data.dns.v3.DnsTable.AddressList</a>)
+.withClusterName('string')
+.withServiceList(<a href="../envoy.data.dns.v3/dns-table-dns-service-list.html">types.envoy.data.dns.v3.DnsTable.DnsServiceList</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>address_list</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.data.dns.v3/dns-table-address-list.html">envoy.data.dns.v3.DnsTable.AddressList</a>
+			
+		</td>
+		<td>endpoint_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>endpoint_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>service_list</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.data.dns.v3/dns-table-dns-service-list.html">envoy.data.dns.v3.DnsTable.DnsServiceList</a>
+			
+		</td>
+		<td>endpoint_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

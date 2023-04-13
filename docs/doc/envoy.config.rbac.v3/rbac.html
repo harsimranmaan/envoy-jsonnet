@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.rbac.v3.RBAC</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.rbac.v3.RBAC</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.rbac.v3.RBAC
+.withAction(<a href="../envoy.config.rbac.v3/rbac-action.html">types.envoy.config.rbac.v3.RBAC.Action.ALLOW</a>)
+.withPolicies(<span class='coll'>{</span> key: <a href="../envoy.config.rbac.v3/policy.html">types.envoy.config.rbac.v3.Policy</a> <span class='coll'>}</span>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.rbac.v3/rbac-action.html">envoy.config.rbac.v3.RBAC.Action</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.rbac.v3/rbac-policies-entry.html">envoy.config.rbac.v3.RBAC.PoliciesEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>action</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.rbac.v3/rbac-action.html">envoy.config.rbac.v3.RBAC.Action</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>policies</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../envoy.config.rbac.v3/policy.html">envoy.config.rbac.v3.Policy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

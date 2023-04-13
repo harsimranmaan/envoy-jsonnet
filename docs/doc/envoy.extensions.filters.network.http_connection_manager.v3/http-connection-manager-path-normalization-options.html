@@ -1,0 +1,98 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions
+.withForwardingTransformation(<a href="../envoy.type.http.v3/path-transformation.html">types.envoy.type.http.v3.PathTransformation</a>)
+.withHttpFilterTransformation(<a href="../envoy.type.http.v3/path-transformation.html">types.envoy.type.http.v3.PathTransformation</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>forwarding_transformation</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.http.v3/path-transformation.html">envoy.type.http.v3.PathTransformation</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http_filter_transformation</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.http.v3/path-transformation.html">envoy.type.http.v3.PathTransformation</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

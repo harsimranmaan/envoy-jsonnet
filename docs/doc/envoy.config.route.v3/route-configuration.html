@@ -1,0 +1,388 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.RouteConfiguration</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.RouteConfiguration</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.RouteConfiguration
+.withClusterSpecifierPlugins(<span class='coll'>[</span> <a href="../envoy.config.route.v3/cluster-specifier-plugin.html">types.envoy.config.route.v3.ClusterSpecifierPlugin</a> <span class='coll'>]</span>)
+.withIgnorePathParametersInPathMatching(false)
+.withIgnorePortInHostMatching(false)
+.withInternalOnlyHeaders(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withMaxDirectResponseBodySizeBytes(1)
+.withMostSpecificHeaderMutationsWins(false)
+.withName('string')
+.withRequestHeadersToAdd(<span class='coll'>[</span> <a href="../envoy.config.core.v3/header-value-option.html">types.envoy.config.core.v3.HeaderValueOption</a> <span class='coll'>]</span>)
+.withRequestHeadersToRemove(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withRequestMirrorPolicies(<span class='coll'>[</span> <a href="../envoy.config.route.v3/route-action-request-mirror-policy.html">types.envoy.config.route.v3.RouteAction.RequestMirrorPolicy</a> <span class='coll'>]</span>)
+.withResponseHeadersToAdd(<span class='coll'>[</span> <a href="../envoy.config.core.v3/header-value-option.html">types.envoy.config.core.v3.HeaderValueOption</a> <span class='coll'>]</span>)
+.withResponseHeadersToRemove(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withTypedPerFilterConfig(<span class='coll'>{</span> key: <a href="../google.protobuf/any.html">types.google.protobuf.Any</a> <span class='coll'>}</span>)
+.withValidateClusters(false)
+.withVhds(<a href="../envoy.config.route.v3/vhds.html">types.envoy.config.route.v3.Vhds</a>)
+.withVirtualHosts(<span class='coll'>[</span> <a href="../envoy.config.route.v3/virtual-host.html">types.envoy.config.route.v3.VirtualHost</a> <span class='coll'>]</span>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/route-configuration-typed-per-filter-config-entry.html">envoy.config.route.v3.RouteConfiguration.TypedPerFilterConfigEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>cluster_specifier_plugins</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/cluster-specifier-plugin.html">envoy.config.route.v3.ClusterSpecifierPlugin</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignore_path_parameters_in_path_matching</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignore_port_in_host_matching</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>internal_only_headers</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_direct_response_body_size_bytes</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>most_specific_header_mutations_wins</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers_to_add</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/header-value-option.html">envoy.config.core.v3.HeaderValueOption</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;max_items&#34;:1000}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers_to_remove</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_mirror_policies</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/route-action-request-mirror-policy.html">envoy.config.route.v3.RouteAction.RequestMirrorPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_headers_to_add</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/header-value-option.html">envoy.config.core.v3.HeaderValueOption</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;max_items&#34;:1000}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_headers_to_remove</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_per_filter_config</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../google.protobuf/any.html">google.protobuf.Any</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>validate_clusters</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>vhds</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/vhds.html">envoy.config.route.v3.Vhds</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>virtual_hosts</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/virtual-host.html">envoy.config.route.v3.VirtualHost</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

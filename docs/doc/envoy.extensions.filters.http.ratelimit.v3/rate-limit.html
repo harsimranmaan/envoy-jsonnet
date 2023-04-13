@@ -1,0 +1,288 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.ratelimit.v3.RateLimit</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.ratelimit.v3.RateLimit</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.ratelimit.v3.RateLimit
+.withDisableXEnvoyRatelimitedHeader(false)
+.withDomain('string')
+.withEnableXRatelimitHeaders(<a href="../envoy.extensions.filters.http.ratelimit.v3/rate-limit-x-rate-limit-headers-rfc-version.html">types.envoy.extensions.filters.http.ratelimit.v3.RateLimit.XRateLimitHeadersRFCVersion.OFF</a>)
+.withFailureModeDeny(false)
+.withRateLimitService(<a href="../envoy.config.ratelimit.v3/rate-limit-service-config.html">types.envoy.config.ratelimit.v3.RateLimitServiceConfig</a>)
+.withRateLimitedAsResourceExhausted(false)
+.withRateLimitedStatus(<a href="../envoy.type.v3/http-status.html">types.envoy.type.v3.HttpStatus</a>)
+.withRequestType('string')
+.withResponseHeadersToAdd(<span class='coll'>[</span> <a href="../envoy.config.core.v3/header-value-option.html">types.envoy.config.core.v3.HeaderValueOption</a> <span class='coll'>]</span>)
+.withStage(1)
+.withTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.ratelimit.v3/rate-limit-x-rate-limit-headers-rfc-version.html">envoy.extensions.filters.http.ratelimit.v3.RateLimit.XRateLimitHeadersRFCVersion</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>disable_x_envoy_ratelimited_header</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>domain</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enable_x_ratelimit_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.ratelimit.v3/rate-limit-x-rate-limit-headers-rfc-version.html">envoy.extensions.filters.http.ratelimit.v3.RateLimit.XRateLimitHeadersRFCVersion</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>failure_mode_deny</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limit_service</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.ratelimit.v3/rate-limit-service-config.html">envoy.config.ratelimit.v3.RateLimitServiceConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limited_as_resource_exhausted</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rate_limited_status</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/http-status.html">envoy.type.v3.HttpStatus</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_type</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;in&#34;:[&#34;internal&#34;,&#34;external&#34;,&#34;both&#34;,&#34;&#34;]}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_headers_to_add</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/header-value-option.html">envoy.config.core.v3.HeaderValueOption</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;max_items&#34;:10}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stage</td>
+		<td>
+			
+			
+			
+				uint32
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;lte&#34;:10}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

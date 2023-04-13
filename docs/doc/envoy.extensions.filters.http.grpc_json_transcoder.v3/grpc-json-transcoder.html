@@ -1,0 +1,403 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder
+.withAutoMapping(false)
+.withCaseInsensitiveEnumParsing(false)
+.withConvertGrpcStatus(false)
+.withIgnoreUnknownQueryParameters(false)
+.withIgnoredQueryParameters(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withMatchIncomingRequestRoute(false)
+.withMatchUnregisteredCustomVerb(false)
+.withMaxRequestBodySize(1)
+.withMaxResponseBodySize(1)
+.withPrintOptions(<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-print-options.html">types.envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.PrintOptions</a>)
+.withProtoDescriptor('string')
+.withProtoDescriptorBin('c3RyaW5n')
+.withQueryParamUnescapePlus(false)
+.withRequestValidationOptions(<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-request-validation-options.html">types.envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.RequestValidationOptions</a>)
+.withServices(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withUrlUnescapeSpec(<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-url-unescape-spec.html">types.envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.UrlUnescapeSpec.ALL_CHARACTERS_EXCEPT_RESERVED</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-url-unescape-spec.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.UrlUnescapeSpec</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-print-options.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.PrintOptions</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-request-validation-options.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.RequestValidationOptions</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>auto_mapping</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>case_insensitive_enum_parsing</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>convert_grpc_status</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignore_unknown_query_parameters</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ignored_query_parameters</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>match_incoming_request_route</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>match_unregistered_custom_verb</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_request_body_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gt&#34;:0}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_response_body_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gt&#34;:0}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>print_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-print-options.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.PrintOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>proto_descriptor</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>descriptor_set</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>proto_descriptor_bin</td>
+		<td>
+			
+			
+			
+				bytes
+			
+		</td>
+		<td>descriptor_set</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>query_param_unescape_plus</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_validation_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-request-validation-options.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.RequestValidationOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>services</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>url_unescape_spec</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.grpc_json_transcoder.v3/grpc-json-transcoder-url-unescape-spec.html">envoy.extensions.filters.http.grpc_json_transcoder.v3.GrpcJsonTranscoder.UrlUnescapeSpec</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

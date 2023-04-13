@@ -1,0 +1,148 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.health_check.v3.HealthCheck</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.health_check.v3.HealthCheck</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.health_check.v3.HealthCheck
+.withCacheTime(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withClusterMinHealthyPercentages(<span class='coll'>{</span> key: <a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a> <span class='coll'>}</span>)
+.withHeaders(<span class='coll'>[</span> <a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a> <span class='coll'>]</span>)
+.withPassThroughMode(false)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.health_check.v3/health-check-cluster-min-healthy-percentages-entry.html">envoy.extensions.filters.http.health_check.v3.HealthCheck.ClusterMinHealthyPercentagesEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>cache_time</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>cluster_min_healthy_percentages</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>pass_through_mode</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

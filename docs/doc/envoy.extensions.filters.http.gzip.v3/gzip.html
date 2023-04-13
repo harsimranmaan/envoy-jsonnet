@@ -1,0 +1,198 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.gzip.v3.Gzip</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.gzip.v3.Gzip</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.gzip.v3.Gzip
+.withChunkSize(1)
+.withCompressionLevel(<a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-level-enum.html">types.envoy.extensions.filters.http.gzip.v3.Gzip.CompressionLevel.Enum.DEFAULT</a>)
+.withCompressionStrategy(<a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-strategy.html">types.envoy.extensions.filters.http.gzip.v3.Gzip.CompressionStrategy.DEFAULT</a>)
+.withCompressor(<a href="../envoy.extensions.filters.http.compressor.v3/compressor.html">types.envoy.extensions.filters.http.compressor.v3.Compressor</a>)
+.withMemoryLevel(1)
+.withWindowBits(1)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-strategy.html">envoy.extensions.filters.http.gzip.v3.Gzip.CompressionStrategy</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-level.html">envoy.extensions.filters.http.gzip.v3.Gzip.CompressionLevel</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>chunk_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:4096,&#34;lte&#34;:65536}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>compression_level</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-level-enum.html">envoy.extensions.filters.http.gzip.v3.Gzip.CompressionLevel.Enum</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>compression_strategy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.gzip.v3/gzip-compression-strategy.html">envoy.extensions.filters.http.gzip.v3.Gzip.CompressionStrategy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>compressor</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.compressor.v3/compressor.html">envoy.extensions.filters.http.compressor.v3.Compressor</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>memory_level</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:1,&#34;lte&#34;:9}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>window_bits</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:9,&#34;lte&#34;:15}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+
