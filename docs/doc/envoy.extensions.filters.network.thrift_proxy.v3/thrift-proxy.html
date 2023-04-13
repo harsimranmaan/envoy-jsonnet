@@ -1,0 +1,258 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.thrift_proxy.v3.ThriftProxy</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.thrift_proxy.v3.ThriftProxy</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.thrift_proxy.v3.ThriftProxy
+.withAccessLog(<span class='coll'>[</span> <a href="../envoy.config.accesslog.v3/access-log.html">types.envoy.config.accesslog.v3.AccessLog</a> <span class='coll'>]</span>)
+.withHeaderKeysPreserveCase(false)
+.withMaxRequestsPerConnection(1)
+.withPayloadPassthrough(false)
+.withProtocol(<a href="../envoy.extensions.filters.network.thrift_proxy.v3/protocol-type.html">types.envoy.extensions.filters.network.thrift_proxy.v3.ProtocolType.AUTO_PROTOCOL</a>)
+.withRouteConfig(<a href="../envoy.extensions.filters.network.thrift_proxy.v3/route-configuration.html">types.envoy.extensions.filters.network.thrift_proxy.v3.RouteConfiguration</a>)
+.withStatPrefix('string')
+.withThriftFilters(<span class='coll'>[</span> <a href="../envoy.extensions.filters.network.thrift_proxy.v3/thrift-filter.html">types.envoy.extensions.filters.network.thrift_proxy.v3.ThriftFilter</a> <span class='coll'>]</span>)
+.withTransport(<a href="../envoy.extensions.filters.network.thrift_proxy.v3/transport-type.html">types.envoy.extensions.filters.network.thrift_proxy.v3.TransportType.AUTO_TRANSPORT</a>)
+.withTrds(<a href="../envoy.extensions.filters.network.thrift_proxy.v3/trds.html">types.envoy.extensions.filters.network.thrift_proxy.v3.Trds</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>access_log</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.accesslog.v3/access-log.html">envoy.config.accesslog.v3.AccessLog</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>header_keys_preserve_case</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_requests_per_connection</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>payload_passthrough</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>protocol</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.v3/protocol-type.html">envoy.extensions.filters.network.thrift_proxy.v3.ProtocolType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>route_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.v3/route-configuration.html">envoy.extensions.filters.network.thrift_proxy.v3.RouteConfiguration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>thrift_filters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.v3/thrift-filter.html">envoy.extensions.filters.network.thrift_proxy.v3.ThriftFilter</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>transport</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.v3/transport-type.html">envoy.extensions.filters.network.thrift_proxy.v3.TransportType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>trds</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.thrift_proxy.v3/trds.html">envoy.extensions.filters.network.thrift_proxy.v3.Trds</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

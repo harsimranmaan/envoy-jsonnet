@@ -1,0 +1,358 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.fault.v3.HTTPFault</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.fault.v3.HTTPFault</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.fault.v3.HTTPFault
+.withAbort(<a href="../envoy.extensions.filters.http.fault.v3/fault-abort.html">types.envoy.extensions.filters.http.fault.v3.FaultAbort</a>)
+.withAbortGrpcStatusRuntime('string')
+.withAbortHttpStatusRuntime('string')
+.withAbortPercentRuntime('string')
+.withDelay(<a href="../envoy.extensions.filters.common.fault.v3/fault-delay.html">types.envoy.extensions.filters.common.fault.v3.FaultDelay</a>)
+.withDelayDurationRuntime('string')
+.withDelayPercentRuntime('string')
+.withDisableDownstreamClusterStats(false)
+.withDownstreamNodes(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withHeaders(<span class='coll'>[</span> <a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a> <span class='coll'>]</span>)
+.withMaxActiveFaults(1)
+.withMaxActiveFaultsRuntime('string')
+.withResponseRateLimit(<a href="../envoy.extensions.filters.common.fault.v3/fault-rate-limit.html">types.envoy.extensions.filters.common.fault.v3.FaultRateLimit</a>)
+.withResponseRateLimitPercentRuntime('string')
+.withUpstreamCluster('string')
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>abort</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.fault.v3/fault-abort.html">envoy.extensions.filters.http.fault.v3.FaultAbort</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>abort_grpc_status_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>abort_http_status_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>abort_percent_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>delay</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.common.fault.v3/fault-delay.html">envoy.extensions.filters.common.fault.v3.FaultDelay</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>delay_duration_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>delay_percent_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>disable_downstream_cluster_stats</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>downstream_nodes</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>headers</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_active_faults</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_active_faults_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_rate_limit</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.common.fault.v3/fault-rate-limit.html">envoy.extensions.filters.common.fault.v3.FaultRateLimit</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_rate_limit_percent_runtime</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_cluster</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

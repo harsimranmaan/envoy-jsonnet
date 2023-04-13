@@ -1,0 +1,208 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing
+.withClientSampling(<a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a>)
+.withCustomTags(<span class='coll'>[</span> <a href="../envoy.type.tracing.v3/custom-tag.html">types.envoy.type.tracing.v3.CustomTag</a> <span class='coll'>]</span>)
+.withMaxPathTagLength(1)
+.withOverallSampling(<a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a>)
+.withProvider(<a href="../envoy.config.trace.v3/tracing-http.html">types.envoy.config.trace.v3.Tracing.Http</a>)
+.withRandomSampling(<a href="../envoy.type.v3/percent.html">types.envoy.type.v3.Percent</a>)
+.withVerbose(false)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-tracing-operation-name.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing.OperationName</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>client_sampling</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>custom_tags</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.type.tracing.v3/custom-tag.html">envoy.type.tracing.v3.CustomTag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_path_tag_length</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>overall_sampling</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>provider</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.trace.v3/tracing-http.html">envoy.config.trace.v3.Tracing.Http</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>random_sampling</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/percent.html">envoy.type.v3.Percent</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>verbose</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,358 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>google.api.expr.v1alpha1.Type</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>google.api.expr.v1alpha1.Type</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.google.api.expr.v1alpha1.Type
+.withAbstractType(<a href="../google.api.expr.v1alpha1/type-abstract-type.html">types.google.api.expr.v1alpha1.Type.AbstractType</a>)
+.withDyn(<a href="../google.protobuf/empty.html">types.google.protobuf.Empty</a>)
+.withError(<a href="../google.protobuf/empty.html">types.google.protobuf.Empty</a>)
+.withFunction(<a href="../google.api.expr.v1alpha1/type-function-type.html">types.google.api.expr.v1alpha1.Type.FunctionType</a>)
+.withListType(<a href="../google.api.expr.v1alpha1/type-list-type.html">types.google.api.expr.v1alpha1.Type.ListType</a>)
+.withMapType(<a href="../google.api.expr.v1alpha1/type-map-type.html">types.google.api.expr.v1alpha1.Type.MapType</a>)
+.withMessageType('string')
+.withNull(<a href="../google.protobuf/null-value.html">types.google.protobuf.NullValue.NULL_VALUE</a>)
+.withPrimitive(<a href="../google.api.expr.v1alpha1/type-primitive-type.html">types.google.api.expr.v1alpha1.Type.PrimitiveType.PRIMITIVE_TYPE_UNSPECIFIED</a>)
+.withType(<a href="../google.api.expr.v1alpha1/type.html">types.google.api.expr.v1alpha1.Type</a>)
+.withTypeParam('string')
+.withWellKnown(<a href="../google.api.expr.v1alpha1/type-well-known-type.html">types.google.api.expr.v1alpha1.Type.WellKnownType.WELL_KNOWN_TYPE_UNSPECIFIED</a>)
+.withWrapper(<a href="../google.api.expr.v1alpha1/type-primitive-type.html">types.google.api.expr.v1alpha1.Type.PrimitiveType.PRIMITIVE_TYPE_UNSPECIFIED</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-primitive-type.html">google.api.expr.v1alpha1.Type.PrimitiveType</a></li>
+	
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-well-known-type.html">google.api.expr.v1alpha1.Type.WellKnownType</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-list-type.html">google.api.expr.v1alpha1.Type.ListType</a></li>
+	
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-map-type.html">google.api.expr.v1alpha1.Type.MapType</a></li>
+	
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-function-type.html">google.api.expr.v1alpha1.Type.FunctionType</a></li>
+	
+
+	
+	
+		<li><a href="../google.api.expr.v1alpha1/type-abstract-type.html">google.api.expr.v1alpha1.Type.AbstractType</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>abstract_type</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-abstract-type.html">google.api.expr.v1alpha1.Type.AbstractType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dyn</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/empty.html">google.protobuf.Empty</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>error</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/empty.html">google.protobuf.Empty</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>function</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-function-type.html">google.api.expr.v1alpha1.Type.FunctionType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>list_type</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-list-type.html">google.api.expr.v1alpha1.Type.ListType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>map_type</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-map-type.html">google.api.expr.v1alpha1.Type.MapType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>message_type</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>null</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/null-value.html">google.protobuf.NullValue</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>primitive</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-primitive-type.html">google.api.expr.v1alpha1.Type.PrimitiveType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>type</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type.html">google.api.expr.v1alpha1.Type</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>type_param</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>well_known</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-well-known-type.html">google.api.expr.v1alpha1.Type.WellKnownType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>wrapper</td>
+		<td>
+			
+			
+			
+				<a href="../google.api.expr.v1alpha1/type-primitive-type.html">google.api.expr.v1alpha1.Type.PrimitiveType</a>
+			
+		</td>
+		<td>type_kind</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

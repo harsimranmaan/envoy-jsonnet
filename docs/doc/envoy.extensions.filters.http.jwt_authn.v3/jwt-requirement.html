@@ -1,0 +1,178 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.jwt_authn.v3.JwtRequirement</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.jwt_authn.v3.JwtRequirement</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.jwt_authn.v3.JwtRequirement
+.withAllowMissing(<a href="../google.protobuf/empty.html">types.google.protobuf.Empty</a>)
+.withAllowMissingOrFailed(<a href="../google.protobuf/empty.html">types.google.protobuf.Empty</a>)
+.withProviderAndAudiences(<a href="../envoy.extensions.filters.http.jwt_authn.v3/provider-with-audiences.html">types.envoy.extensions.filters.http.jwt_authn.v3.ProviderWithAudiences</a>)
+.withProviderName('string')
+.withRequiresAll(<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement-and-list.html">types.envoy.extensions.filters.http.jwt_authn.v3.JwtRequirementAndList</a>)
+.withRequiresAny(<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement-or-list.html">types.envoy.extensions.filters.http.jwt_authn.v3.JwtRequirementOrList</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>allow_missing</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/empty.html">google.protobuf.Empty</a>
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>allow_missing_or_failed</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/empty.html">google.protobuf.Empty</a>
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>provider_and_audiences</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/provider-with-audiences.html">envoy.extensions.filters.http.jwt_authn.v3.ProviderWithAudiences</a>
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>provider_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>requires_all</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement-and-list.html">envoy.extensions.filters.http.jwt_authn.v3.JwtRequirementAndList</a>
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>requires_any</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement-or-list.html">envoy.extensions.filters.http.jwt_authn.v3.JwtRequirementOrList</a>
+			
+		</td>
+		<td>requires_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

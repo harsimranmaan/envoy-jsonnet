@@ -1,0 +1,178 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.core.v3.SubstitutionFormatString</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.core.v3.SubstitutionFormatString</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.core.v3.SubstitutionFormatString
+.withContentType('string')
+.withFormatters(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withJsonFormat(<a href="../google.protobuf/struct.html">types.google.protobuf.Struct</a>)
+.withOmitEmptyValues(false)
+.withTextFormat('string')
+.withTextFormatSource(<a href="../envoy.config.core.v3/data-source.html">types.envoy.config.core.v3.DataSource</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>content_type</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>formatters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>json_format</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/struct.html">google.protobuf.Struct</a>
+			
+		</td>
+		<td>format</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>omit_empty_values</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>text_format</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td>format</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>text_format_source</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/data-source.html">envoy.config.core.v3.DataSource</a>
+			
+		</td>
+		<td>format</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route
+.withCluster('string')
+.withPrefix('string')
+.withRemovePrefix(false)
+.withRequestMirrorPolicy(<span class='coll'>[</span> <a href="../envoy.extensions.filters.network.redis_proxy.v3/redis-proxy-prefix-routes-route-request-mirror-policy.html">types.envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route.RequestMirrorPolicy</a> <span class='coll'>]</span>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.redis_proxy.v3/redis-proxy-prefix-routes-route-request-mirror-policy.html">envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route.RequestMirrorPolicy</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>cluster</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;max_bytes&#34;:1000}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>remove_prefix</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_mirror_policy</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.network.redis_proxy.v3/redis-proxy-prefix-routes-route-request-mirror-policy.html">envoy.extensions.filters.network.redis_proxy.v3.RedisProxy.PrefixRoutes.Route.RequestMirrorPolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

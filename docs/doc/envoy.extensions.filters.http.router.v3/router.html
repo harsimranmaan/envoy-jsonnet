@@ -1,0 +1,218 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.router.v3.Router</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.router.v3.Router</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.router.v3.Router
+.withDynamicStats(false)
+.withRespectExpectedRqTimeout(false)
+.withStartChildSpan(false)
+.withStrictCheckHeaders(<span class='coll'>[</span> 'string' <span class='coll'>]</span>)
+.withSuppressEnvoyHeaders(false)
+.withSuppressGrpcRequestFailureCodeStats(false)
+.withUpstreamHttpFilters(<span class='coll'>[</span> <a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-filter.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpFilter</a> <span class='coll'>]</span>)
+.withUpstreamLog(<span class='coll'>[</span> <a href="../envoy.config.accesslog.v3/access-log.html">types.envoy.config.accesslog.v3.AccessLog</a> <span class='coll'>]</span>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>dynamic_stats</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>respect_expected_rq_timeout</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>start_child_span</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>strict_check_headers</td>
+		<td>
+			[]
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Repeated&#34;:{&#34;items&#34;:{&#34;Type&#34;:{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;in&#34;:[&#34;x-envoy-upstream-rq-timeout-ms&#34;,&#34;x-envoy-upstream-rq-per-try-timeout-ms&#34;,&#34;x-envoy-max-retries&#34;,&#34;x-envoy-retry-grpc-on&#34;,&#34;x-envoy-retry-on&#34;]}}}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>suppress_envoy_headers</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>suppress_grpc_request_failure_code_stats</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_http_filters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-filter.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpFilter</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upstream_log</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.accesslog.v3/access-log.html">envoy.config.accesslog.v3.AccessLog</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

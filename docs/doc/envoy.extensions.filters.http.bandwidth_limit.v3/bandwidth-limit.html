@@ -1,0 +1,208 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit
+.withEnableMode(<a href="../envoy.extensions.filters.http.bandwidth_limit.v3/bandwidth-limit-enable-mode.html">types.envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit.EnableMode.DISABLED</a>)
+.withEnableResponseTrailers(false)
+.withFillInterval(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withLimitKbps(1)
+.withResponseTrailerPrefix('string')
+.withRuntimeEnabled(<a href="../envoy.config.core.v3/runtime-feature-flag.html">types.envoy.config.core.v3.RuntimeFeatureFlag</a>)
+.withStatPrefix('string')
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.bandwidth_limit.v3/bandwidth-limit-enable-mode.html">envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit.EnableMode</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>enable_mode</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.bandwidth_limit.v3/bandwidth-limit-enable-mode.html">envoy.extensions.filters.http.bandwidth_limit.v3.BandwidthLimit.EnableMode</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enable_response_trailers</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>fill_interval</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{&#34;nanos&#34;:20000000},&#34;lte&#34;:{&#34;seconds&#34;:1}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>limit_kbps</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-64-value.html">google.protobuf.UInt64Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint64&#34;:{&#34;gte&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>response_trailer_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>runtime_enabled</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-feature-flag.html">envoy.config.core.v3.RuntimeFeatureFlag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

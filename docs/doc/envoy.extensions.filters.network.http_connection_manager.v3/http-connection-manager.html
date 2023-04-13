@@ -1,0 +1,1118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+.withAccessLog(<span class='coll'>[</span> <a href="../envoy.config.accesslog.v3/access-log.html">types.envoy.config.accesslog.v3.AccessLog</a> <span class='coll'>]</span>)
+.withAddUserAgent(false)
+.withAlwaysSetRequestIdInResponse(false)
+.withAppendXForwardedPort(false)
+.withCodecType(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-codec-type.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.CodecType.AUTO</a>)
+.withCommonHttpProtocolOptions(<a href="../envoy.config.core.v3/http-protocol-options.html">types.envoy.config.core.v3.HttpProtocolOptions</a>)
+.withDelayedCloseTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withDrainTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withEarlyHeaderMutationExtensions(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withForwardClientCertDetails(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-forward-client-cert-details.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ForwardClientCertDetails.SANITIZE</a>)
+.withGenerateRequestId(false)
+.withHttp2ProtocolOptions(<a href="../envoy.config.core.v3/http-2-protocol-options.html">types.envoy.config.core.v3.Http2ProtocolOptions</a>)
+.withHttp3ProtocolOptions(<a href="../envoy.config.core.v3/http-3-protocol-options.html">types.envoy.config.core.v3.Http3ProtocolOptions</a>)
+.withHttpFilters(<span class='coll'>[</span> <a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-filter.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpFilter</a> <span class='coll'>]</span>)
+.withHttpProtocolOptions(<a href="../envoy.config.core.v3/http-1-protocol-options.html">types.envoy.config.core.v3.Http1ProtocolOptions</a>)
+.withInternalAddressConfig(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-internal-address-config.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.InternalAddressConfig</a>)
+.withLocalReplyConfig(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/local-reply-config.html">types.envoy.extensions.filters.network.http_connection_manager.v3.LocalReplyConfig</a>)
+.withMaxRequestHeadersKb(1)
+.withMergeSlashes(false)
+.withNormalizePath(false)
+.withOriginalIpDetectionExtensions(<span class='coll'>[</span> <a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a> <span class='coll'>]</span>)
+.withPathNormalizationOptions(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-normalization-options.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions</a>)
+.withPathWithEscapedSlashesAction(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-with-escaped-slashes-action.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathWithEscapedSlashesAction.IMPLEMENTATION_SPECIFIC_DEFAULT</a>)
+.withPreserveExternalRequestId(false)
+.withProxy100Continue(false)
+.withProxyStatusConfig(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-proxy-status-config.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ProxyStatusConfig</a>)
+.withRds(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/rds.html">types.envoy.extensions.filters.network.http_connection_manager.v3.Rds</a>)
+.withRepresentIpv4RemoteAddressAsIpv4MappedIpv6(false)
+.withRequestHeadersTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withRequestIdExtension(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/request-id-extension.html">types.envoy.extensions.filters.network.http_connection_manager.v3.RequestIDExtension</a>)
+.withRequestTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withRouteConfig(<a href="../envoy.config.route.v3/route-configuration.html">types.envoy.config.route.v3.RouteConfiguration</a>)
+.withSchemeHeaderTransformation(<a href="../envoy.config.core.v3/scheme-header-transformation.html">types.envoy.config.core.v3.SchemeHeaderTransformation</a>)
+.withScopedRoutes(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/scoped-routes.html">types.envoy.extensions.filters.network.http_connection_manager.v3.ScopedRoutes</a>)
+.withServerHeaderTransformation(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-server-header-transformation.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ServerHeaderTransformation.OVERWRITE</a>)
+.withServerName('string')
+.withSetCurrentClientCertDetails(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-set-current-client-cert-details.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.SetCurrentClientCertDetails</a>)
+.withSkipXffAppend(false)
+.withStatPrefix('string')
+.withStreamErrorOnInvalidHttpMessage(false)
+.withStreamIdleTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+.withStripAnyHostPort(false)
+.withStripMatchingHostPort(false)
+.withStripTrailingHostDot(false)
+.withTracing(<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-tracing.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing</a>)
+.withTypedHeaderValidationConfig(<a href="../envoy.config.core.v3/typed-extension-config.html">types.envoy.config.core.v3.TypedExtensionConfig</a>)
+.withUpgradeConfigs(<span class='coll'>[</span> <a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-upgrade-config.html">types.envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.UpgradeConfig</a> <span class='coll'>]</span>)
+.withUseRemoteAddress(false)
+.withVia('string')
+.withXffNumTrustedHops(1)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-codec-type.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.CodecType</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-server-header-transformation.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ServerHeaderTransformation</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-forward-client-cert-details.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ForwardClientCertDetails</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-with-escaped-slashes-action.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathWithEscapedSlashesAction</a></li>
+	
+
+</ul>
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-tracing.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-internal-address-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.InternalAddressConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-set-current-client-cert-details.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.SetCurrentClientCertDetails</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-upgrade-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.UpgradeConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-normalization-options.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-proxy-status-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ProxyStatusConfig</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>access_log</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.accesslog.v3/access-log.html">envoy.config.accesslog.v3.AccessLog</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>add_user_agent</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>always_set_request_id_in_response</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>append_x_forwarded_port</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>codec_type</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-codec-type.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.CodecType</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>common_http_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-protocol-options.html">envoy.config.core.v3.HttpProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>delayed_close_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>drain_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>early_header_mutation_extensions</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>forward_client_cert_details</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-forward-client-cert-details.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ForwardClientCertDetails</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>generate_request_id</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http2_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-2-protocol-options.html">envoy.config.core.v3.Http2ProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http3_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-3-protocol-options.html">envoy.config.core.v3.Http3ProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http_filters</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-filter.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpFilter</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>http_protocol_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-1-protocol-options.html">envoy.config.core.v3.Http1ProtocolOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>internal_address_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-internal-address-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.InternalAddressConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>local_reply_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/local-reply-config.html">envoy.extensions.filters.network.http_connection_manager.v3.LocalReplyConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>max_request_headers_kb</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gt&#34;:0,&#34;lte&#34;:8192}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>merge_slashes</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>normalize_path</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>original_ip_detection_extensions</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_normalization_options</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-normalization-options.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathNormalizationOptions</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_with_escaped_slashes_action</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-path-with-escaped-slashes-action.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.PathWithEscapedSlashesAction</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>preserve_external_request_id</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>proxy_100_continue</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>proxy_status_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-proxy-status-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ProxyStatusConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rds</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/rds.html">envoy.extensions.filters.network.http_connection_manager.v3.Rds</a>
+			
+		</td>
+		<td>route_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>represent_ipv4_remote_address_as_ipv4_mapped_ipv6</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_headers_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{}}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_id_extension</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/request-id-extension.html">envoy.extensions.filters.network.http_connection_manager.v3.RequestIDExtension</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>request_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>route_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-configuration.html">envoy.config.route.v3.RouteConfiguration</a>
+			
+		</td>
+		<td>route_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>scheme_header_transformation</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/scheme-header-transformation.html">envoy.config.core.v3.SchemeHeaderTransformation</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>scoped_routes</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/scoped-routes.html">envoy.extensions.filters.network.http_connection_manager.v3.ScopedRoutes</a>
+			
+		</td>
+		<td>route_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>server_header_transformation</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-server-header-transformation.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.ServerHeaderTransformation</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>server_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>set_current_client_cert_details</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-set-current-client-cert-details.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.SetCurrentClientCertDetails</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>skip_xff_append</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stat_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stream_error_on_invalid_http_message</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>stream_idle_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>strip_any_host_port</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>strip_port_mode</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>strip_matching_host_port</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>strip_trailing_host_dot</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>tracing</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-tracing.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.Tracing</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>typed_header_validation_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/typed-extension-config.html">envoy.config.core.v3.TypedExtensionConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>upgrade_configs</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.network.http_connection_manager.v3/http-connection-manager-upgrade-config.html">envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager.UpgradeConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>use_remote_address</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>via</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:2},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>xff_num_trusted_hops</td>
+		<td>
+			
+			
+			
+				uint32
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

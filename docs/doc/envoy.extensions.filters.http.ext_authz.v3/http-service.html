@@ -1,0 +1,138 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.ext_authz.v3.HttpService</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.ext_authz.v3.HttpService</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.ext_authz.v3.HttpService
+.withAuthorizationRequest(<a href="../envoy.extensions.filters.http.ext_authz.v3/authorization-request.html">types.envoy.extensions.filters.http.ext_authz.v3.AuthorizationRequest</a>)
+.withAuthorizationResponse(<a href="../envoy.extensions.filters.http.ext_authz.v3/authorization-response.html">types.envoy.extensions.filters.http.ext_authz.v3.AuthorizationResponse</a>)
+.withPathPrefix('string')
+.withServerUri(<a href="../envoy.config.core.v3/http-uri.html">types.envoy.config.core.v3.HttpUri</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>authorization_request</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.ext_authz.v3/authorization-request.html">envoy.extensions.filters.http.ext_authz.v3.AuthorizationRequest</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>authorization_response</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.ext_authz.v3/authorization-response.html">envoy.extensions.filters.http.ext_authz.v3.AuthorizationResponse</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>path_prefix</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>server_uri</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/http-uri.html">envoy.config.core.v3.HttpUri</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

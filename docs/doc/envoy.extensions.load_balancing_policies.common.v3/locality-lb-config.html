@@ -1,0 +1,113 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig
+.withLocalityWeightedLbConfig(<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-locality-weighted-lb-config.html">types.envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.LocalityWeightedLbConfig</a>)
+.withZoneAwareLbConfig(<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-zone-aware-lb-config.html">types.envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.ZoneAwareLbConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-zone-aware-lb-config.html">envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.ZoneAwareLbConfig</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-locality-weighted-lb-config.html">envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.LocalityWeightedLbConfig</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>locality_weighted_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-locality-weighted-lb-config.html">envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.LocalityWeightedLbConfig</a>
+			
+		</td>
+		<td>locality_config_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>zone_aware_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config-zone-aware-lb-config.html">envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig.ZoneAwareLbConfig</a>
+			
+		</td>
+		<td>locality_config_specifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

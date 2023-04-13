@@ -1,0 +1,98 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.transport_sockets.starttls.v3.UpstreamStartTlsConfig</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.transport_sockets.starttls.v3.UpstreamStartTlsConfig</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.transport_sockets.starttls.v3.UpstreamStartTlsConfig
+.withCleartextSocketConfig(<a href="../envoy.extensions.transport_sockets.raw_buffer.v3/raw-buffer.html">types.envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer</a>)
+.withTlsSocketConfig(<a href="../envoy.extensions.transport_sockets.tls.v3/upstream-tls-context.html">types.envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>cleartext_socket_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.raw_buffer.v3/raw-buffer.html">envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>tls_socket_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/upstream-tls-context.html">envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

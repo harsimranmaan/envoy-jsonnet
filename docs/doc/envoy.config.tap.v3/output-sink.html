@@ -1,0 +1,168 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.tap.v3.OutputSink</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.tap.v3.OutputSink</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.tap.v3.OutputSink
+.withBufferedAdmin(<a href="../envoy.config.tap.v3/buffered-admin-sink.html">types.envoy.config.tap.v3.BufferedAdminSink</a>)
+.withFilePerTap(<a href="../envoy.config.tap.v3/file-per-tap-sink.html">types.envoy.config.tap.v3.FilePerTapSink</a>)
+.withFormat(<a href="../envoy.config.tap.v3/output-sink-format.html">types.envoy.config.tap.v3.OutputSink.Format.JSON_BODY_AS_BYTES</a>)
+.withStreamingAdmin(<a href="../envoy.config.tap.v3/streaming-admin-sink.html">types.envoy.config.tap.v3.StreamingAdminSink</a>)
+.withStreamingGrpc(<a href="../envoy.config.tap.v3/streaming-grpc-sink.html">types.envoy.config.tap.v3.StreamingGrpcSink</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.tap.v3/output-sink-format.html">envoy.config.tap.v3.OutputSink.Format</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>buffered_admin</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/buffered-admin-sink.html">envoy.config.tap.v3.BufferedAdminSink</a>
+			
+		</td>
+		<td>output_sink_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>file_per_tap</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/file-per-tap-sink.html">envoy.config.tap.v3.FilePerTapSink</a>
+			
+		</td>
+		<td>output_sink_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>format</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/output-sink-format.html">envoy.config.tap.v3.OutputSink.Format</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>streaming_admin</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/streaming-admin-sink.html">envoy.config.tap.v3.StreamingAdminSink</a>
+			
+		</td>
+		<td>output_sink_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>streaming_grpc</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.tap.v3/streaming-grpc-sink.html">envoy.config.tap.v3.StreamingGrpcSink</a>
+			
+		</td>
+		<td>output_sink_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

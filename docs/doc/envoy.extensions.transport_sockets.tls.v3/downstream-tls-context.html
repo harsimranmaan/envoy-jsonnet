@@ -1,0 +1,248 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext
+.withCommonTlsContext(<a href="../envoy.extensions.transport_sockets.tls.v3/common-tls-context.html">types.envoy.extensions.transport_sockets.tls.v3.CommonTlsContext</a>)
+.withDisableStatelessSessionResumption(false)
+.withFullScanCertsOnSniMismatch(false)
+.withOcspStaplePolicy(<a href="../envoy.extensions.transport_sockets.tls.v3/downstream-tls-context-ocsp-staple-policy.html">types.envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext.OcspStaplePolicy.LENIENT_STAPLING</a>)
+.withRequireClientCertificate(false)
+.withRequireSni(false)
+.withSessionTicketKeys(<a href="../envoy.extensions.transport_sockets.tls.v3/tls-session-ticket-keys.html">types.envoy.extensions.transport_sockets.tls.v3.TlsSessionTicketKeys</a>)
+.withSessionTicketKeysSdsSecretConfig(<a href="../envoy.extensions.transport_sockets.tls.v3/sds-secret-config.html">types.envoy.extensions.transport_sockets.tls.v3.SdsSecretConfig</a>)
+.withSessionTimeout(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.transport_sockets.tls.v3/downstream-tls-context-ocsp-staple-policy.html">envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext.OcspStaplePolicy</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>common_tls_context</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/common-tls-context.html">envoy.extensions.transport_sockets.tls.v3.CommonTlsContext</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>disable_stateless_session_resumption</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>session_ticket_keys_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>full_scan_certs_on_sni_mismatch</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>ocsp_staple_policy</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/downstream-tls-context-ocsp-staple-policy.html">envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext.OcspStaplePolicy</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>require_client_certificate</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>require_sni</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/bool-value.html">google.protobuf.BoolValue</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>session_ticket_keys</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/tls-session-ticket-keys.html">envoy.extensions.transport_sockets.tls.v3.TlsSessionTicketKeys</a>
+			
+		</td>
+		<td>session_ticket_keys_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>session_ticket_keys_sds_secret_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.transport_sockets.tls.v3/sds-secret-config.html">envoy.extensions.transport_sockets.tls.v3.SdsSecretConfig</a>
+			
+		</td>
+		<td>session_ticket_keys_type</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>session_timeout</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gte&#34;:{},&#34;lt&#34;:{&#34;seconds&#34;:4294967296}}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.route.v3.ScopedRouteConfiguration</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.route.v3.ScopedRouteConfiguration</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.route.v3.ScopedRouteConfiguration
+.withKey(<a href="../envoy.config.route.v3/scoped-route-configuration-key.html">types.envoy.config.route.v3.ScopedRouteConfiguration.Key</a>)
+.withName('string')
+.withOnDemand(false)
+.withRouteConfiguration(<a href="../envoy.config.route.v3/route-configuration.html">types.envoy.config.route.v3.RouteConfiguration</a>)
+.withRouteConfigurationName('string')
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.route.v3/scoped-route-configuration-key.html">envoy.config.route.v3.ScopedRouteConfiguration.Key</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>key</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/scoped-route-configuration-key.html">envoy.config.route.v3.ScopedRouteConfiguration.Key</a>
+			
+		</td>
+		<td></td>
+		<td>
+			yes&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:null,&#34;min_len&#34;:1}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>on_demand</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>route_configuration</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/route-configuration.html">envoy.config.route.v3.RouteConfiguration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>route_configuration_name</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.jwt_authn.v3.JwtAuthentication</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.jwt_authn.v3.JwtAuthentication</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.jwt_authn.v3.JwtAuthentication
+.withBypassCorsPreflight(false)
+.withFilterStateRules(<a href="../envoy.extensions.filters.http.jwt_authn.v3/filter-state-rule.html">types.envoy.extensions.filters.http.jwt_authn.v3.FilterStateRule</a>)
+.withProviders(<span class='coll'>{</span> key: <a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-provider.html">types.envoy.extensions.filters.http.jwt_authn.v3.JwtProvider</a> <span class='coll'>}</span>)
+.withRequirementMap(<span class='coll'>{</span> key: <a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement.html">types.envoy.extensions.filters.http.jwt_authn.v3.JwtRequirement</a> <span class='coll'>}</span>)
+.withRules(<span class='coll'>[</span> <a href="../envoy.extensions.filters.http.jwt_authn.v3/requirement-rule.html">types.envoy.extensions.filters.http.jwt_authn.v3.RequirementRule</a> <span class='coll'>]</span>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-authentication-providers-entry.html">envoy.extensions.filters.http.jwt_authn.v3.JwtAuthentication.ProvidersEntry</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-authentication-requirement-map-entry.html">envoy.extensions.filters.http.jwt_authn.v3.JwtAuthentication.RequirementMapEntry</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>bypass_cors_preflight</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>filter_state_rules</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/filter-state-rule.html">envoy.extensions.filters.http.jwt_authn.v3.FilterStateRule</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>providers</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-provider.html">envoy.extensions.filters.http.jwt_authn.v3.JwtProvider</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>requirement_map</td>
+		<td>
+			
+			map[string]
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/jwt-requirement.html">envoy.extensions.filters.http.jwt_authn.v3.JwtRequirement</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>rules</td>
+		<td>
+			[]
+			
+			
+				<a href="../envoy.extensions.filters.http.jwt_authn.v3/requirement-rule.html">envoy.extensions.filters.http.jwt_authn.v3.RequirementRule</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,313 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.config.rbac.v3.Principal</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.config.rbac.v3.Principal</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.config.rbac.v3.Principal
+.withAndIds(<a href="../envoy.config.rbac.v3/principal-set.html">types.envoy.config.rbac.v3.Principal.Set</a>)
+.withAny(false)
+.withAuthenticated(<a href="../envoy.config.rbac.v3/principal-authenticated.html">types.envoy.config.rbac.v3.Principal.Authenticated</a>)
+.withDirectRemoteIp(<a href="../envoy.config.core.v3/cidr-range.html">types.envoy.config.core.v3.CidrRange</a>)
+.withFilterState(<a href="../envoy.type.matcher.v3/filter-state-matcher.html">types.envoy.type.matcher.v3.FilterStateMatcher</a>)
+.withHeader(<a href="../envoy.config.route.v3/header-matcher.html">types.envoy.config.route.v3.HeaderMatcher</a>)
+.withMetadata(<a href="../envoy.type.matcher.v3/metadata-matcher.html">types.envoy.type.matcher.v3.MetadataMatcher</a>)
+.withNotId(<a href="../envoy.config.rbac.v3/principal.html">types.envoy.config.rbac.v3.Principal</a>)
+.withOrIds(<a href="../envoy.config.rbac.v3/principal-set.html">types.envoy.config.rbac.v3.Principal.Set</a>)
+.withRemoteIp(<a href="../envoy.config.core.v3/cidr-range.html">types.envoy.config.core.v3.CidrRange</a>)
+.withSourceIp(<a href="../envoy.config.core.v3/cidr-range.html">types.envoy.config.core.v3.CidrRange</a>)
+.withUrlPath(<a href="../envoy.type.matcher.v3/path-matcher.html">types.envoy.type.matcher.v3.PathMatcher</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.config.rbac.v3/principal-set.html">envoy.config.rbac.v3.Principal.Set</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.config.rbac.v3/principal-authenticated.html">envoy.config.rbac.v3.Principal.Authenticated</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>and_ids</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.rbac.v3/principal-set.html">envoy.config.rbac.v3.Principal.Set</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>any</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Bool&#34;:{&#34;const&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>authenticated</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.rbac.v3/principal-authenticated.html">envoy.config.rbac.v3.Principal.Authenticated</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>direct_remote_ip</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/cidr-range.html">envoy.config.core.v3.CidrRange</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>filter_state</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/filter-state-matcher.html">envoy.type.matcher.v3.FilterStateMatcher</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>header</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.route.v3/header-matcher.html">envoy.config.route.v3.HeaderMatcher</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>metadata</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/metadata-matcher.html">envoy.type.matcher.v3.MetadataMatcher</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>not_id</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.rbac.v3/principal.html">envoy.config.rbac.v3.Principal</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>or_ids</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.rbac.v3/principal-set.html">envoy.config.rbac.v3.Principal.Set</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>remote_ip</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/cidr-range.html">envoy.config.core.v3.CidrRange</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>source_ip</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/cidr-range.html">envoy.config.core.v3.CidrRange</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>url_path</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/path-matcher.html">envoy.type.matcher.v3.PathMatcher</a>
+			
+		</td>
+		<td>identifier</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

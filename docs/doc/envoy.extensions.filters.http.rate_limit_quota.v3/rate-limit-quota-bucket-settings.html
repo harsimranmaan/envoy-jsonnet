@@ -1,0 +1,183 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings
+.withBucketIdBuilder(<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-bucket-id-builder.html">types.envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.BucketIdBuilder</a>)
+.withDenyResponseSettings(<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-deny-response-settings.html">types.envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.DenyResponseSettings</a>)
+.withExpiredAssignmentBehavior(<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-expired-assignment-behavior.html">types.envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.ExpiredAssignmentBehavior</a>)
+.withNoAssignmentBehavior(<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-no-assignment-behavior.html">types.envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.NoAssignmentBehavior</a>)
+.withReportingInterval(<a href="../google.protobuf/duration.html">types.google.protobuf.Duration</a>)
+._validate()
+
+</pre>
+
+
+
+
+<h2>Nested Messages</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-no-assignment-behavior.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.NoAssignmentBehavior</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-expired-assignment-behavior.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.ExpiredAssignmentBehavior</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-deny-response-settings.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.DenyResponseSettings</a></li>
+	
+
+	
+	
+		<li><a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-bucket-id-builder.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.BucketIdBuilder</a></li>
+	
+
+</ul>
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>bucket_id_builder</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-bucket-id-builder.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.BucketIdBuilder</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>deny_response_settings</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-deny-response-settings.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.DenyResponseSettings</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>expired_assignment_behavior</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-expired-assignment-behavior.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.ExpiredAssignmentBehavior</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>no_assignment_behavior</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.rate_limit_quota.v3/rate-limit-quota-bucket-settings-no-assignment-behavior.html">envoy.extensions.filters.http.rate_limit_quota.v3.RateLimitQuotaBucketSettings.NoAssignmentBehavior</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>reporting_interval</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/duration.html">google.protobuf.Duration</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Duration&#34;:{&#34;gt&#34;:{&#34;nanos&#34;:100000000},&#34;required&#34;:true}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

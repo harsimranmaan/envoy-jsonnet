@@ -1,0 +1,98 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.load_balancing_policies.round_robin.v3.RoundRobin</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.load_balancing_policies.round_robin.v3.RoundRobin</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.load_balancing_policies.round_robin.v3.RoundRobin
+.withLocalityLbConfig(<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config.html">types.envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig</a>)
+.withSlowStartConfig(<a href="../envoy.extensions.load_balancing_policies.common.v3/slow-start-config.html">types.envoy.extensions.load_balancing_policies.common.v3.SlowStartConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>locality_lb_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.load_balancing_policies.common.v3/locality-lb-config.html">envoy.extensions.load_balancing_policies.common.v3.LocalityLbConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>slow_start_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.load_balancing_policies.common.v3/slow-start-config.html">envoy.extensions.load_balancing_policies.common.v3.SlowStartConfig</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

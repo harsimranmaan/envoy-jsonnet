@@ -1,0 +1,118 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.adaptive_concurrency.v3.AdaptiveConcurrency</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.adaptive_concurrency.v3.AdaptiveConcurrency</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.adaptive_concurrency.v3.AdaptiveConcurrency
+.withConcurrencyLimitExceededStatus(<a href="../envoy.type.v3/http-status.html">types.envoy.type.v3.HttpStatus</a>)
+.withEnabled(<a href="../envoy.config.core.v3/runtime-feature-flag.html">types.envoy.config.core.v3.RuntimeFeatureFlag</a>)
+.withGradientControllerConfig(<a href="../envoy.extensions.filters.http.adaptive_concurrency.v3/gradient-controller-config.html">types.envoy.extensions.filters.http.adaptive_concurrency.v3.GradientControllerConfig</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>concurrency_limit_exceeded_status</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.v3/http-status.html">envoy.type.v3.HttpStatus</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>enabled</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.config.core.v3/runtime-feature-flag.html">envoy.config.core.v3.RuntimeFeatureFlag</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>gradient_controller_config</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.adaptive_concurrency.v3/gradient-controller-config.html">envoy.extensions.filters.http.adaptive_concurrency.v3.GradientControllerConfig</a>
+			
+		</td>
+		<td>concurrency_controller_config</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

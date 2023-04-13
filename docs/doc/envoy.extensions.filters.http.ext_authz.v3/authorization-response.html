@@ -1,0 +1,158 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.ext_authz.v3.AuthorizationResponse</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.ext_authz.v3.AuthorizationResponse</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.ext_authz.v3.AuthorizationResponse
+.withAllowedClientHeaders(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withAllowedClientHeadersOnSuccess(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withAllowedUpstreamHeaders(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withAllowedUpstreamHeadersToAppend(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+.withDynamicMetadataFromHeaders(<a href="../envoy.type.matcher.v3/list-string-matcher.html">types.envoy.type.matcher.v3.ListStringMatcher</a>)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>allowed_client_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>allowed_client_headers_on_success</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>allowed_upstream_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>allowed_upstream_headers_to_append</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>dynamic_metadata_from_headers</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.type.matcher.v3/list-string-matcher.html">envoy.type.matcher.v3.ListStringMatcher</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

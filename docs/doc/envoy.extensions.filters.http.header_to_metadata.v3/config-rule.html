@@ -1,0 +1,158 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.filters.http.header_to_metadata.v3.Config.Rule</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.filters.http.header_to_metadata.v3.Config.Rule</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.filters.http.header_to_metadata.v3.Config.Rule
+.withCookie('string')
+.withHeader('string')
+.withOnHeaderMissing(<a href="../envoy.extensions.filters.http.header_to_metadata.v3/config-key-value-pair.html">types.envoy.extensions.filters.http.header_to_metadata.v3.Config.KeyValuePair</a>)
+.withOnHeaderPresent(<a href="../envoy.extensions.filters.http.header_to_metadata.v3/config-key-value-pair.html">types.envoy.extensions.filters.http.header_to_metadata.v3.Config.KeyValuePair</a>)
+.withRemove(false)
+._validate()
+
+</pre>
+
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>cookie</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>header</td>
+		<td>
+			
+			
+			
+				string
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;String_&#34;:{&#34;WellKnown&#34;:{&#34;WellKnownRegex&#34;:1},&#34;strict&#34;:false}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>on_header_missing</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.header_to_metadata.v3/config-key-value-pair.html">envoy.extensions.filters.http.header_to_metadata.v3.Config.KeyValuePair</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>on_header_present</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.filters.http.header_to_metadata.v3/config-key-value-pair.html">envoy.extensions.filters.http.header_to_metadata.v3.Config.KeyValuePair</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>remove</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+

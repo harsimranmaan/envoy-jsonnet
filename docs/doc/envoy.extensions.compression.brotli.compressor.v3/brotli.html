@@ -1,0 +1,188 @@
+
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../styles.css">
+<title>envoy.extensions.compression.brotli.compressor.v3.Brotli</title>
+</head>
+<body>
+
+<div class='crumb'>
+	<a href="../../index.html">Home</a>
+</div>
+
+<h1>envoy.extensions.compression.brotli.compressor.v3.Brotli</h1>
+
+
+
+
+<h2>Example</h2>
+<div class='disclaimer'>
+Disclaimer: The example is meant to show what methods are available on the object and does not necessarily constitute working
+code.
+</div>
+
+<pre class='example'>
+local types = import 'types.libsonnet';
+
+types.envoy.extensions.compression.brotli.compressor.v3.Brotli
+.withChunkSize(1)
+.withDisableLiteralContextModeling(false)
+.withEncoderMode(<a href="../envoy.extensions.compression.brotli.compressor.v3/brotli-encoder-mode.html">types.envoy.extensions.compression.brotli.compressor.v3.Brotli.EncoderMode.DEFAULT</a>)
+.withInputBlockBits(1)
+.withQuality(1)
+.withWindowBits(1)
+._validate()
+
+</pre>
+
+
+<h2>Nested Enums</h2>
+<ul>
+
+	
+	
+		<li><a href="../envoy.extensions.compression.brotli.compressor.v3/brotli-encoder-mode.html">envoy.extensions.compression.brotli.compressor.v3.Brotli.EncoderMode</a></li>
+	
+
+</ul>
+
+
+
+
+
+<h2>Fields</h2>
+<table class='fields'>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Type</th>
+		<th>One-of group</th>
+		<th>Required</th>
+		<th>Constraints</th>
+	</tr>
+</thead>
+<tbody>
+
+	
+	<tr>
+		<td>chunk_size</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:4096,&#34;lte&#34;:65536}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>disable_literal_context_modeling</td>
+		<td>
+			
+			
+			
+				bool
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code></code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>encoder_mode</td>
+		<td>
+			
+			
+			
+				<a href="../envoy.extensions.compression.brotli.compressor.v3/brotli-encoder-mode.html">envoy.extensions.compression.brotli.compressor.v3.Brotli.EncoderMode</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Enum&#34;:{&#34;defined_only&#34;:true}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>input_block_bits</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:16,&#34;lte&#34;:24}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>quality</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;lte&#34;:11}}</code>
+		</td>
+	</tr>
+
+	
+	<tr>
+		<td>window_bits</td>
+		<td>
+			
+			
+			
+				<a href="../google.protobuf/u-int-32-value.html">google.protobuf.UInt32Value</a>
+			
+		</td>
+		<td></td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<code>{&#34;Uint32&#34;:{&#34;gte&#34;:10,&#34;lte&#34;:24}}</code>
+		</td>
+	</tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>
+
